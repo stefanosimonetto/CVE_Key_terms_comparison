@@ -14,19 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN python download_data.py
 
 # RUN all inferences for comparison
-RUN python main_comparison\cve_all_terms\inference.py
-RUN python main_comparison\cve_core\inference.py
-RUN python main_comparison\cve_core_consequences\inference.py
-RUN python main_comparison\cve_core_contextual\inference.py
-RUN python main_comparison\cve_descr_repl_subj\inference.py
-RUN python main_comparison\cve_description\inference.py
-
-# RUN comparison between bert and phi
-RUN python bert_phi_comparison\bert\inference.py
-RUN python bert_phi_comparison\phi\inference.py
-
-
-
-
-# Run all inference scripts sequentially and print output
-CMD ["sh", "-c", "python main_comparison\cve_all_terms\inference.py && python inference_2.py && python inference_3.py && python inference_4.py && python inference_5.py && python inference_6.py && python inference_7.py && python inference_8.py && python inference_9.py"]
+# Copy and run the shell script to execute all inference scripts
+COPY run_inferences.sh /app/run_inferences.sh
+RUN chmod +x /app/run_inferences.sh
+CMD ["./run_inferences.sh"]
