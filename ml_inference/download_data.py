@@ -1,5 +1,4 @@
 import requests
-
 def download_file_from_google_drive(id, destination):
     URL = "https://docs.google.com/uc?export=download"
 
@@ -29,6 +28,7 @@ def save_response_content(response, destination):
                 f.write(chunk)
 
 if __name__ == "__main__":
-    file_id = 'YOUR_FILE_ID'
-    destination = 'test_set.pickle'
+    file_id = '1Lu350RIYg7Y9k0Fdax5WXFV0aohBbVGI'  # Use the extracted file ID
+    destination = 'test_core_cons.pickle'
     download_file_from_google_drive(file_id, destination)
+
