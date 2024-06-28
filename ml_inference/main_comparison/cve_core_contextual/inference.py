@@ -27,4 +27,4 @@ y_pred = np.argmax(y_pred_probs, axis=1)
 y_pred_original = label_encoder_train.inverse_transform(y_pred)
 
 # Generate and print the classification report
-print("Classification Report:\n", classification_report(y_test, y_pred_original, digits=4))
+print("Classification Report CVE core+contextual terms (Table3):\n", classification_report(y_test, y_pred_original, digits=4))
