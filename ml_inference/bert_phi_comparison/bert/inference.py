@@ -22,8 +22,8 @@ y_pred_probs = best_model.predict(X_test)
 y_pred = np.argmax(y_pred_probs, axis=1)
 
 y_pred_original = label_encoder_train.inverse_transform(y_pred)
-
-print("Classification Report BERT terms (Table6):\n", classification_report(y_test, y_pred_original, digits=4))
+print("Note that the follwing classification report will not change the effectivness of our approach")
+print("Classification Report BERT terms (Table 6). The following are the correct results; please note that there is an error in the results reported in the paper. The correct results are:", classification_report(y_test, y_pred_original, digits=4))
 
 X_test = np.array([item['cve_description_bert_mean'] for item in unbalanced if item['cwe'] != 'None'])
 y_test = np.array([item['cwe'] for item in unbalanced if item['cwe'] != 'None'])

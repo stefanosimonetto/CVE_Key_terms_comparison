@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 from keras.models import load_model
 
 # Load the saved model
-best_model = load_model('bert_phi_comparison/phi/CWE_classes.h5')
+best_model = load_model('bert_phi_comparison/phi/best_model_terms.h5')
 with open('bert_phi_comparison/phi/phi_terms_comp_test.pickle', 'rb') as f2:
     unbalanced = pickle.load(f2)
 
