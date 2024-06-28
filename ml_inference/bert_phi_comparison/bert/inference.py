@@ -28,7 +28,7 @@ print("Classification Report BERT terms (Table6):\n", classification_report(y_te
 X_test = np.array([item['cve_description_bert_mean'] for item in unbalanced if item['cwe'] != 'None'])
 y_test = np.array([item['cwe'] for item in unbalanced if item['cwe'] != 'None'])
 
-best_model=joblib.load('bert_phi_comparison/bert/best_model_descr.h5')
+best_model=load_model('bert_phi_comparison/bert/best_model_descr.h5')
 label_encoder_train=joblib.load('bert_phi_comparison/bert/label_encoder_train_descr.joblib')
 
 # Make predictions on the test set
