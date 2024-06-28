@@ -25,11 +25,12 @@ y_pred_original = label_encoder_train.inverse_transform(y_pred)
 print("Classification Report phi-2 terms (Table6):\n", classification_report(y_test, y_pred_original, digits=4))
 
 
-
+with open('bert_phi_comparison/phi/test_phi_descr_comparison.pickle', 'rb') as f2:
+    unbalanced = pickle.load(f2)
 X_test = np.array([item['cve_description_phi'] for item in unbalanced if item['cwe'] != 'None'])
 y_test = np.array([item['cwe'] for item in unbalanced if item['cwe'] != 'None'])
 
-best_model=joblib.load('bert_phi_comparison/phi/CWE_classes.h5')
+best_model=load_model('bert_phi_comparison/phi/CWE_classes.h5')
 label_encoder_train=joblib.load('bert_phi_comparison/phi/label_encoder_train.joblib')
 
 # Make predictions on the test set

@@ -14,7 +14,8 @@ if __name__ == "__main__":
         '1qiAzRM1wrD-XDWXDrlvMAQwrXOlRHy3T',
         '1Puf21VWSx5BhvlvlrTSjxm2bBD5YRpda',
         '16Bta2lYcaoJJKt_LzMbgA_yaLNvmc_KT',
-        '134iKdIK1-z7mgyFP9f3dl7cUqk33m2Ao'
+        '134iKdIK1-z7mgyFP9f3dl7cUqk33m2Ao',
+        '1AuojKwJk4QDE9l0nDYNlV7wujnu-vthU'
 
     ]
     destinations = [
@@ -26,7 +27,8 @@ if __name__ == "__main__":
         'main_comparison/cve_all_terms/test_terms.pickle',
         'main_comparison/cve_descr_no_subj/test_no_subj.pickle',
         'main_comparison/cve_descr_repl_subj/test_repl_subj.pickle',
-        'main_comparison/cve_description/test.pickle'
+        'main_comparison/cve_description/test.pickle',
+        'bert_phi_comparison/phi/test_phi_descr_comparison.pickle'
         
     ]
 
