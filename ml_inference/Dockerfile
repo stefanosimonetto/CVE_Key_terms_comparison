@@ -1,5 +1,4 @@
-# Use an official Python runtime as a parent image
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 # Set the working directory in the container
 WORKDIR /app
@@ -13,8 +12,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Run the download script to get the test data
 RUN python download_data.py
 
-# RUN all inferences for comparison
-# Copy and run the shell script to execute all inference scripts
-COPY run_inferences.sh /app/run_inferences.sh
-RUN chmod +x /app/run_inferences.sh
-CMD ["./run_inferences.sh"]
+# Make the shell script executable
+RUN chmod +x run_inference.sh
+
+# Run all inference scripts sequentially and print output
+CMD ["sh", "run_inference.sh"]
+

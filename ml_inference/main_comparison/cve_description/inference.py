@@ -2,9 +2,10 @@ import pickle
 import numpy as np
 from sklearn.metrics import classification_report
 import joblib
+from keras.models import load_model
 
 # Load the saved model
-best_model = joblib.load('CWE_classes.joblib')
+best_model = load_model('main_comparison/cve_description/CWE_classes.h5')
 
 # Load the label encoder
 label_encoder_train = joblib.load('label_encoder_train.joblib')

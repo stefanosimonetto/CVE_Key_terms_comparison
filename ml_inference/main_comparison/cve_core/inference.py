@@ -2,15 +2,16 @@ import pickle
 import numpy as np
 from sklearn.metrics import classification_report
 import joblib
+from keras.models import load_model
 
 # Load the saved model
-best_model = joblib.load('CWE_classes.joblib')
+best_model = load_model('main_comparison/cve_core/CWE_classes.h5')
 
 # Load the label encoder
-label_encoder_train = joblib.load('label_encoder_train.joblib')
+label_encoder_train = joblib.load('main_comparison/cve_core/label_encoder_train.joblib')
 
 # Load the test data
-with open('test.pickle', 'rb') as f2:
+with open('main_comparison/cve_core/test.pickle', 'rb') as f2:
     unbalanced = pickle.load(f2)
 
 X_test = np.array([item['cve_core_ada_embedding'] for item in unbalanced if item['cwe'] != 'None'])
