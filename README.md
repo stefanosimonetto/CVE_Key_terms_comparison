@@ -9,7 +9,7 @@ The main question we answer in this work is: "Which parts of a CVE description c
 To test the artifact, follow these steps (note that creating the Docker container will take time because the dataset is large):
 
 ```sh
-git clone https://github.com/stefanosimonetto/CVE_Key_terms_comparison.git
+download the repository
 
 cd ml_inference
 
