@@ -19,8 +19,11 @@ docker run test_inference
 
 ```
 ## What to expect by running the artifact
-To test the artifact, follow these steps (note that creating the Docker container will take time because the dataset is large):
+When running the artifact, the following steps will be performed:
 
+The Docker container will set up the necessary environment.
+The dataset will be loaded (this process will take few minutes)
+Each model will be run in inference mode, one at a time, generating and printing the classification reports corresponding to all the tables presented in the paper.
 
 ## dataset availability
 The complete dataset is available and can be accessed at: https://drive.google.com/drive/folders/13i4sKSNiHIWU0mQ_MVe1lansIHt-1xKJ?usp=drive_link
@@ -28,5 +31,4 @@ Note: Downloading the dataset requires requesting access, which may de-anonymize
 
 # NOTE: 
 If you want to train the models with the same dataset, the results may slightly differ due to the randomness in the initialization of the neural network.
-
-
+The paper results are the same as in the artifact apart from BERT descriptions (Table6) where the results in the artifact are correct. This will be fixed in the camera ready version of the paper.
