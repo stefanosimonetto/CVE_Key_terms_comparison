@@ -21,9 +21,11 @@ docker run test_inference
 ## What to expect by running the artifact
 When running the artifact, the following steps will be performed:
 
-The Docker container will set up the necessary environment.
-The dataset will be loaded (this process will take few minutes)
-Each model will be run in inference mode, one at a time, generating and printing the classification reports corresponding to all the tables presented in the paper.
+1-The Docker container will set up the necessary environment.
+
+2-The dataset will be loaded (this process will take few minutes)
+
+3-Each model will be run in inference mode, one at a time, generating and printing the classification reports corresponding to all the tables presented in the paper.
 
 ## dataset availability
 The complete dataset is available and can be accessed at: https://drive.google.com/drive/folders/13i4sKSNiHIWU0mQ_MVe1lansIHt-1xKJ?usp=drive_link
