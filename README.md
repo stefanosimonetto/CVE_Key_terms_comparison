@@ -18,10 +18,15 @@ docker build -t test_inference .
 docker run test_inference
 
 ```
+## What to expect by running the artifact
+To test the artifact, follow these steps (note that creating the Docker container will take time because the dataset is large):
+
 
 ## dataset availability
 The complete dataset is available and can be accessed at: https://drive.google.com/drive/folders/13i4sKSNiHIWU0mQ_MVe1lansIHt-1xKJ?usp=drive_link
+Note: Downloading the dataset requires requesting access, which may de-anonymize the reviewers.
 
-# NOTE: If you want to train the models with the same dataset, the results may slightly differ due to the randomness in the initialization of the neural network.
+# NOTE: 
+If you want to train the models with the same dataset, the results may slightly differ due to the randomness in the initialization of the neural network.
 
 
