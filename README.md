@@ -32,6 +32,16 @@ The complete dataset is available and can be accessed at: https://drive.google.c
 Note: Downloading the dataset requires requesting access, which may de-anonymize the reviewers.
 
 # NOTE: 
+### Expert Evaluation Criteria:
+
+1. **Hallucinations**: Does the model introduce terms that are neither present in the CVE description nor logically connected to the vulnerability?
+   
+2. **Consistency**: Are the key terms generated consistent across three different runs of the model?
+
+3. **Overall Completeness**: Do the extracted terms, including core elements, consequences, and contextual information, comprehensively describe the vulnerability?
+
+
+
 If you want to train the models with the same dataset, the results may slightly differ due to the randomness in the initialization of the neural network.
 
 The paper results match those in the artifact, except for the BERT descriptions (Table 6), where the artifact results are correct. This discrepancy does not affect the claims made in the paper, and the error will be corrected in the camera-ready version.
