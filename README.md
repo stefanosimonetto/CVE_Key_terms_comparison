@@ -44,4 +44,3 @@ Note: Downloading the dataset requires requesting access, which may de-anonymize
 
 If you want to train the models with the same dataset, the results may slightly differ due to the randomness in the initialization of the neural network.
 
-The paper results match those in the artifact, except for the BERT descriptions (Table 6), where the artifact results are correct. This discrepancy does not affect the claims made in the paper, and the error will be corrected in the camera-ready version.
