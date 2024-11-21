@@ -1,0 +1,4663 @@
+[
+    {
+        "Description": "Solaris ufsrestore buffer overflow.",
+        "Terms": {
+            "core_terms": [
+                "Buffer Overflow"
+            ],
+            "contextual_terms": [
+                "Solaris",
+                "UFSRestore",
+                "Overflow"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Memory corruption",
+                "System compromise"
+            ]
+        },
+        "CNA_cwe": "119",
+        "cwe_guessed_from_descr": "120",
+        "cwe_guessed_from_terms": "120",
+        "Stefano_CWE": "119",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Buffer overflow in nlps_server in Sun Solaris x86 2.4, 2.5, and 2.5.1 allows remote attackers to execute arbitrary code as root via a long string beginning with \"NLPS:002:002:\" to the listen (aka System V listener) port, TCP port 2766.",
+        "Terms": {
+            "core_terms": [
+                "Buffer Overflow",
+                "Arbitrary Code Execution",
+                "Remote Attack"
+            ],
+            "contextual_terms": [
+                "Sun Solaris",
+                "nlps_server",
+                "TCP port 2766"
+            ],
+            "consequences": [
+                "Root access",
+                "Code execution",
+                "Remote exploit"
+            ]
+        },
+        "CNA_cwe": "119",
+        "cwe_guessed_from_descr": "119",
+        "cwe_guessed_from_terms": "119",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A CWE-863: Incorrect Authorization vulnerability exists in U.motion Server (MEG6501-0001 - U.motion KNX server, MEG6501-0002 - U.motion KNX Server Plus, MEG6260-0410 - U.motion KNX Server Plus, Touch 10, MEG6260-0415 - U.motion KNX Server Plus, Touch 15), which could allow the file system to access the wrong file.",
+        "Terms": {
+            "core_terms": [
+                "Incorrect Authorization Vulnerability",
+                "File System Access",
+                "U.motion Server"
+            ],
+            "contextual_terms": [
+                "MEG6501-0001",
+                "MEG6501-0002",
+                "MEG6260-0410"
+            ],
+            "consequences": [
+                "Unauthorized file access",
+                "Security vulnerability",
+                "Wrong file access"
+            ]
+        },
+        "CNA_cwe": "863",
+        "cwe_guessed_from_descr": "863",
+        "cwe_guessed_from_terms": "863",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A CWE-863: Incorrect Authorization vulnerability exists in U.motion Server (MEG6501-0001 - U.motion KNX server, MEG6501-0002 - U.motion KNX Server Plus, MEG6260-0410 - U.motion KNX Server Plus, Touch 10, MEG6260-0415 - U.motion KNX Server Plus, Touch 15), which could allow a user with low privileges to delete a critical file.",
+        "Terms": {
+            "core_terms": [
+                "Incorrect Authorization Vulnerability",
+                "Low Privilege User",
+                "Critical File Deletion"
+            ],
+            "contextual_terms": [
+                "U.motion Server",
+                "KNX Server",
+                "Privileges"
+            ],
+            "consequences": [
+                "Data deletion",
+                "Security vulnerability",
+                "User privilege escalation"
+            ]
+        },
+        "CNA_cwe": "863",
+        "cwe_guessed_from_descr": "862",
+        "cwe_guessed_from_terms": "863",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A CWE-287: Improper Authentication vulnerability exists in a folder within EcoStruxure Geo SCADA Expert (ClearSCADA) -with initial releases before 1 January 2019- which could cause a low privilege user to delete or modify database, setting or certificate files. Those users must have access to the file system of that operating system to exploit this vulnerability. Affected versions in current support includes ClearSCADA 2017 R3, ClearSCADA 2017 R2, and ClearSCADA 2017.",
+        "Terms": {
+            "core_terms": [
+                "Improper Authentication",
+                "Low Privilege User",
+                "File Modification"
+            ],
+            "contextual_terms": [
+                "Folder Access",
+                "File System",
+                "Operating System"
+            ],
+            "consequences": [
+                "Database Modification",
+                "Settings Change",
+                "Certificate Manipulation"
+            ]
+        },
+        "CNA_cwe": "287",
+        "cwe_guessed_from_descr": "22",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper access control in Nextcloud Talk 6.0.3 leaks the existance and the name of private conversations when linked them to another shared item via the projects feature.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Information Leakage",
+                "Nextcloud Talk"
+            ],
+            "contextual_terms": [
+                "Private Conversations",
+                "Shared Item",
+                "Projects Feature"
+            ],
+            "consequences": [
+                "Exposure of Private Information",
+                "Unauthorized Access",
+                "Data Leakage"
+            ]
+        },
+        "CNA_cwe": "287",
+        "cwe_guessed_from_descr": "863",
+        "cwe_guessed_from_terms": "639",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A flaw was found in all resteasy 3.x.x versions prior to 3.12.0.Final and all resteasy 4.x.x versions prior to 4.6.0.Final, where an improper input validation results in returning an illegal header that integrates into the server's response. This flaw may result in an injection, which leads to unexpected behavior when the HTTP response is constructed.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Flaw",
+                "Illegal Header Injection",
+                "Unexpected Behavior"
+            ],
+            "contextual_terms": [
+                "Improper Input Validation",
+                "Server's Response",
+                "HTTP Response Construction"
+            ],
+            "consequences": [
+                "Injection Vulnerability",
+                "Integration into Response",
+                "Behavioral Inconsistency"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "74",
+        "cwe_guessed_from_terms": "94",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper Access Control in attribute in McAfee Endpoint Security (ENS) for Windows prior to 10.7.0 February 2021 Update allows authenticated local administrator user to perform an uninstallation of the anti-malware engine via the running of a specific command with the correct parameters.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Uninstallation",
+                "Authenticated User"
+            ],
+            "contextual_terms": [
+                "McAfee Endpoint Security",
+                "Local Administrator",
+                "Specific Command"
+            ],
+            "consequences": [
+                "Security vulnerability",
+                "Anti-malware engine uninstallation",
+                "Risk of unauthorized access"
+            ]
+        },
+        "CNA_cwe": "269",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "276",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper Access Control vulnerability in McAfee Endpoint Security (ENS) for Windows prior to 10.7.0 February 2021 Update allows local administrators to prevent the installation of some ENS files by placing carefully crafted files where ENS will be installed. This is only applicable to clean installations of ENS as the Access Control rules will prevent modification prior to up an upgrade.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "McAfee Endpoint Security",
+                "Local administrators"
+            ],
+            "contextual_terms": [
+                "Windows",
+                "Installation",
+                "Clean installations"
+            ],
+            "consequences": [
+                "Preventing file installation",
+                "Access Control rules",
+                "Upgrade limitations"
+            ]
+        },
+        "CNA_cwe": "269",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "269",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper access control in NotificationManagerService in Samsung mobile devices prior to SMR Mar-2021 Release 1 allows untrusted applications to acquire notification access via sending a crafted malicious intent.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "NotificationManagerService",
+                "Untrusted Applications"
+            ],
+            "contextual_terms": [
+                "Samsung mobile devices",
+                "SMR Mar-2021 Release 1",
+                "Crafted malicious intent"
+            ],
+            "consequences": [
+                "Notification access acquisition",
+                "Security vulnerability",
+                "Unauthorized access"
+            ]
+        },
+        "CNA_cwe": "269",
+        "cwe_guessed_from_descr": "755",
+        "cwe_guessed_from_terms": "862",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper access control in clipboard service in Samsung mobile devices prior to SMR Mar-2021 Release 1 allows untrusted applications to read or write certain local files.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Clipboard Service",
+                "Untrusted Applications"
+            ],
+            "contextual_terms": [
+                "Samsung mobile devices",
+                "SMR Mar-2021 Release 1",
+                "Local files"
+            ],
+            "consequences": [
+                "Unauthorized file access",
+                "Security bypass",
+                "Data leakage"
+            ]
+        },
+        "CNA_cwe": "269",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "863",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An improper access control vulnerability in sec_log file prior to SMR MAR-2021 Release 1 exposes sensitive kernel information to userspace.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Sensitive Kernel Information Exposure",
+                "Security Log File"
+            ],
+            "contextual_terms": [
+                "Vulnerability",
+                "Userspace",
+                "SMR MAR-2021 Release 1"
+            ],
+            "consequences": [
+                "Exposure of sensitive information",
+                "Unauthorized access",
+                "System compromise"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "532",
+        "cwe_guessed_from_terms": "532",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An improper access control vulnerability in stickerCenter prior to SMR APR-2021 Release 1 allows local attackers to read or write arbitrary files of system process via untrusted applications.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Arbitrary File Access",
+                "Local Attack"
+            ],
+            "contextual_terms": [
+                "StickerCenter",
+                "SMR APR-2021",
+                "System Process"
+            ],
+            "consequences": [
+                "File Read/Write",
+                "Untrusted Applications",
+                "Local Exploitation"
+            ]
+        },
+        "CNA_cwe": "22",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "668",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper access control of certain port in SmartThings prior to version 1.7.63.6 allows remote temporary denial of service.",
+        "Terms": {
+            "core_terms": [
+                "Access Control Vulnerability",
+                "Denial of Service",
+                "Remote Exploitation"
+            ],
+            "contextual_terms": [
+                "Port access control",
+                "SmartThings",
+                "Temporary denial of service"
+            ],
+            "consequences": [
+                "Remote disruption",
+                "Service unavailability",
+                "Remote exploitation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "863",
+        "cwe_guessed_from_terms": "276",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An improper access control vulnerability has been reported to affect QNAP NAS. If exploited, this vulnerability allows remote attackers to compromise the security of the software. This issue affects: QNAP Systems Inc. Helpdesk versions prior to 3.0.4.",
+        "Terms": {
+            "core_terms": [
+                "Access Control Vulnerability",
+                "Remote Compromise",
+                "Security Impact"
+            ],
+            "contextual_terms": [
+                "QNAP NAS",
+                "Remote Attackers",
+                "Helpdesk versions"
+            ],
+            "consequences": [
+                "Security compromise",
+                "Remote exploitation",
+                "Vulnerability impact"
+            ]
+        },
+        "CNA_cwe": "269",
+        "cwe_guessed_from_descr": "287",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "In Dex2oat of dex2oat.cc, there is a possible way to inject bytecode into an app due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-9 Android-10 Android-11Android ID: A-178055795",
+        "Terms": {
+            "core_terms": [
+                "Bytecode Injection",
+                "Improper Input Validation",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "Dex2oat",
+                "App security",
+                "Android versions"
+            ],
+            "consequences": [
+                "Local privilege escalation",
+                "No user interaction",
+                "Unvalidated input"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "502",
+        "cwe_guessed_from_terms": "74",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "In Weidmueller Industrial WLAN devices in multiple versions an exploitable improper access control vulnerability exists in the iw_webs account settings functionality. A specially crafted user name entry can cause the overwrite of an existing user account password, resulting in remote shell access to the device as that user. An attacker can send commands while authenticated as a low privilege user to trigger this vulnerability.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "User Account Password Overwrite",
+                "Remote Shell Access"
+            ],
+            "contextual_terms": [
+                "IW_WEBS Account Settings",
+                "Specially Crafted User Name Entry",
+                "Remote Command Execution"
+            ],
+            "consequences": [
+                "Privilege Escalation",
+                "Remote Access",
+                "Command Injection"
+            ]
+        },
+        "CNA_cwe": "269",
+        "cwe_guessed_from_descr": "732",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "The Easy Cookies Policy WordPress plugin through 1.6.2 is lacking any capability and CSRF check when saving its settings, allowing any authenticated users (such as subscriber) to change them. If users can't register, this can be done through CSRF. Furthermore, the cookie banner setting is not sanitised or validated before being output in all pages of the frontend and the backend settings one, leading to a Stored Cross-Site Scripting issue.",
+        "Terms": {
+            "core_terms": [
+                "CSRF vulnerability",
+                "Improper input validation",
+                "Stored Cross-Site Scripting"
+            ],
+            "contextual_terms": [
+                "WordPress plugin",
+                "Cookie policy",
+                "Authenticated users"
+            ],
+            "consequences": [
+                "Unauthorized settings modification",
+                "Cross-Site Scripting attack",
+                "Security bypass"
+            ]
+        },
+        "CNA_cwe": "863",
+        "cwe_guessed_from_descr": "862",
+        "cwe_guessed_from_terms": "352",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper access control vulnerability in Tizen FOTA service prior to Firmware update JUL-2021 Release allows attackers to arbitrary code execution by replacing FOTA update file.",
+        "Terms": {
+            "core_terms": [
+                "Access Control Vulnerability",
+                "Arbitrary Code Execution",
+                "Firmware Update"
+            ],
+            "contextual_terms": [
+                "Tizen",
+                "FOTA service",
+                "Security vulnerability"
+            ],
+            "consequences": [
+                "Unauthorized code execution",
+                "Firmware update manipulation",
+                "Security breach"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "755",
+        "cwe_guessed_from_terms": "862",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper Access Control vulnerability in web service of Secomea SiteManager allows local attacker without credentials to gather network information and configuration of the SiteManager. This issue affects: Secomea SiteManager All versions prior to 9.5 on Hardware.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Web service vulnerability",
+                "Secomea SiteManager"
+            ],
+            "contextual_terms": [
+                "Local attacker",
+                "Network information gathering",
+                "Configuration access"
+            ],
+            "consequences": [
+                "Unauthorized access",
+                "Information disclosure",
+                "System compromise"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "863",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Some improper access control in Bluetooth APIs prior to SMR Sep-2021 Release 1 allows untrusted application to get Bluetooth information.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Bluetooth API Vulnerability",
+                "Untrusted Application"
+            ],
+            "contextual_terms": [
+                "Bluetooth APIs",
+                "Access Control",
+                "Untrusted application"
+            ],
+            "consequences": [
+                "Unauthorized access",
+                "Security vulnerability",
+                "Information disclosure"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Multiple vulnerabilities in the Cisco ATA 190 Series Analog Telephone Adapter Software could allow an attacker to perform a command injection attack resulting in remote code execution or cause a denial of service (DoS) condition on an affected device. For more information about these vulnerabilities, see the Details section of this advisory.",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "Remote Code Execution",
+                "Denial of Service"
+            ],
+            "contextual_terms": [
+                "Cisco ATA 190 Series",
+                "Analog Telephone Adapter",
+                "Vulnerabilities"
+            ],
+            "consequences": [
+                "Attack execution",
+                "Device compromise",
+                "Service disruption"
+            ]
+        },
+        "CNA_cwe": "770",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "It was found that the fix for CVE-2021-41773 in Apache HTTP Server 2.4.50 was insufficient. An attacker could use a path traversal attack to map URLs to files outside the directories configured by Alias-like directives. If files outside of these directories are not protected by the usual default configuration \"require all denied\", these requests can succeed. If CGI scripts are also enabled for these aliased pathes, this could allow for remote code execution. This issue only affects Apache 2.4.49 and Apache 2.4.50 and not earlier versions.",
+        "Terms": {
+            "core_terms": [
+                "Path Traversal",
+                "Remote Code Execution",
+                "Insufficient Fix"
+            ],
+            "contextual_terms": [
+                "URL Mapping",
+                "Alias-like Directives",
+                "CGI Scripts"
+            ],
+            "consequences": [
+                "Unauthorized File Access",
+                "Remote Command Execution",
+                "Insufficient Security"
+            ]
+        },
+        "CNA_cwe": "22",
+        "cwe_guessed_from_descr": "22",
+        "cwe_guessed_from_terms": "22",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An Improper Input Validation vulnerability in routing process daemon (RPD) of Juniper Networks Junos OS devices configured with BGP origin validation using Resource Public Key Infrastructure (RPKI), allows an attacker to send a specific BGP update which may cause RPKI policy-checks to be bypassed. This, in turn, may allow a spoofed advertisement to be accepted or propagated. This issue affects: Juniper Networks Junos OS 12.3 versions prior to 12.3R12-S18; 15.1 versions prior to 15.1R7-S9; 17.2 versions prior to 17.2R3-S3; 17.3 versions prior to 17.3R3-S7; 17.4 versions prior to 17.4R2-S9, 17.4R3; 18.1 versions prior to 18.1R3-S13; 18.2 versions prior to 18.2R3-S3; 18.3 versions prior to 18.3R3-S1; 18.4 versions prior to 18.4R3; 19.1 versions prior to 19.1R2; 19.2 versions prior to 19.2R2; 19.3 versions prior to 19.3R2.",
+        "Terms": {
+            "core_terms": [
+                "BGP Update Spoofing",
+                "RPKI Policy Bypass",
+                "Improper RPKI Check"
+            ],
+            "contextual_terms": [
+                "Routing process daemon",
+                "Junos OS",
+                "Bypassed policy-checks"
+            ],
+            "consequences": [
+                "Spoofed advertisement acceptance",
+                "Security policy bypass",
+                "Vulnerability exploitation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "287",
+        "cwe_guessed_from_terms": "863",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A privilege escalation vulnerability exists in the Remote Server functionality of Dream Report ODS Remote Connector 20.2.16900.0. A specially-crafted command injection can lead to elevated capabilities. An attacker can provide a malicious file to trigger this vulnerability.",
+        "Terms": {
+            "core_terms": [
+                "Privilege Escalation",
+                "Command Injection",
+                "Remote Server"
+            ],
+            "contextual_terms": [
+                "Specially-crafted",
+                "Elevated capabilities",
+                "Malicious file"
+            ],
+            "consequences": [
+                "Unauthorized access",
+                "Security compromise",
+                "Capability elevation"
+            ]
+        },
+        "CNA_cwe": "276",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "78",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Carinal Tien Hospital Health Report System\u2019s login page has improper authentication, a remote attacker can acquire another general user\u2019s privilege by modifying the cookie parameter without authentication. The attacker can then perform limited operations on the system or modify data, making the service partially unavailable to the user.",
+        "Terms": {
+            "core_terms": [
+                "Improper Authentication",
+                "Privilege Escalation",
+                "Session Manipulation"
+            ],
+            "contextual_terms": [
+                "Login page",
+                "Remote attack",
+                "Cookie parameter"
+            ],
+            "consequences": [
+                "Unauthorized access",
+                "Data modification",
+                "Service disruption"
+            ]
+        },
+        "CNA_cwe": "639",
+        "cwe_guessed_from_descr": "287",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "The Rearrange Woocommerce Products WordPress plugin before 3.0.8 does not have proper access controls in the save_all_order AJAX action, nor validation and escaping when inserting user data in SQL statement, leading to an SQL injection, and allowing any authenticated user, such as subscriber, to modify arbitrary post content (for example with an XSS payload), as well as exfiltrate any data by copying it to another post.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "SQL Injection",
+                "Cross-Site Scripting"
+            ],
+            "contextual_terms": [
+                "AJAX action",
+                "Validation",
+                "Escaping",
+                "User data",
+                "Arbitrary post content",
+                "Exfiltration"
+            ],
+            "consequences": [
+                "Arbitrary data modification",
+                "Data exfiltration",
+                "Post content modification"
+            ]
+        },
+        "CNA_cwe": "89",
+        "cwe_guessed_from_descr": "862",
+        "cwe_guessed_from_terms": "352",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Arbitrary Command Injection in GitHub repository strapi/strapi prior to 4.1.0.",
+        "Terms": {
+            "core_terms": [
+                "Arbitrary Command Injection",
+                "GitHub Repository",
+                "Strapi"
+            ],
+            "contextual_terms": [
+                "Command Injection",
+                "Code Execution",
+                "Vulnerability"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Repository compromise",
+                "Application security risk"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Code Injection in GitHub repository dolibarr/dolibarr prior to 15.0.1.",
+        "Terms": {
+            "core_terms": [
+                "Code Injection",
+                "GitHub Repository",
+                "Dolibarr"
+            ],
+            "contextual_terms": [
+                "Vulnerability",
+                "Software",
+                "Version"
+            ],
+            "consequences": [
+                "Remote code execution",
+                "Security risk",
+                "Software version"
+            ]
+        },
+        "CNA_cwe": "94",
+        "cwe_guessed_from_descr": "74",
+        "cwe_guessed_from_terms": "94",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "The absence of filters when loading some sections in the web application of the vulnerable device allows attackers to inject malicious code that will be interpreted when a legitimate user accesses the specific web section where the information is displayed. Injection can be done on specific parameters. The injected code is executed when a legitimate user attempts to review history.",
+        "Terms": {
+            "core_terms": [
+                "Injection Vulnerability",
+                "Absence of Filters",
+                "Code Execution"
+            ],
+            "contextual_terms": [
+                "Web application",
+                "Malicious code injection",
+                "Parameter manipulation"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Security bypass",
+                "History tampering"
+            ]
+        },
+        "CNA_cwe": "94",
+        "cwe_guessed_from_descr": "94",
+        "cwe_guessed_from_terms": "74",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "The absence of filters when loading some sections in the web application of the vulnerable device allows attackers to inject malicious code that will be interpreted when a legitimate user accesses the web section where the information is displayed. Injection can be done on specific parameters. The injected code is executed when a legitimate user attempts to upload, copy, download, or delete an existing configuration (Administrative Services).",
+        "Terms": {
+            "core_terms": [
+                "Code Injection",
+                "Absence of Filters",
+                "Web Application Vulnerability"
+            ],
+            "contextual_terms": [
+                "Malicious code injection",
+                "Parameter manipulation",
+                "Configuration management"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Unauthorized data manipulation",
+                "Security bypass"
+            ]
+        },
+        "CNA_cwe": "94",
+        "cwe_guessed_from_descr": "94",
+        "cwe_guessed_from_terms": "94",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper access control vulnerability in dynamic receiver in ApkInstaller prior to SMR MAR-2022 Release allows unauthorized attackers to execute arbitrary activity without a proper permission",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Dynamic Receiver",
+                "Arbitrary Activity Execution"
+            ],
+            "contextual_terms": [
+                "Authorization",
+                "Security Misconfiguration",
+                "Unauthorized Access"
+            ],
+            "consequences": [
+                "Arbitrary Activity Execution",
+                "Security Vulnerability",
+                "Unauthorized Access"
+            ]
+        },
+        "CNA_cwe": "269",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "862",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper authentication in One UI Home prior to SMR Mar-2022 Release 1 allows attacker to generate pinned-shortcut without user consent.",
+        "Terms": {
+            "core_terms": [
+                "Improper Authentication",
+                "Pinned-Shortcut Generation",
+                "User Consent Bypass"
+            ],
+            "contextual_terms": [
+                "One UI Home",
+                "SMR Mar-2022 Release 1",
+                "Attacker"
+            ],
+            "consequences": [
+                "Unauthorized access",
+                "Security bypass",
+                "User consent violation"
+            ]
+        },
+        "CNA_cwe": "287",
+        "cwe_guessed_from_descr": "287",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "CRHTLF can lead to invalid protocol extraction potentially leading to XSS in GitHub repository medialize/uri.js prior to 1.19.11.",
+        "Terms": {
+            "core_terms": [
+                "Invalid Protocol Extraction",
+                "Cross-Site Scripting",
+                "GitHub Repository"
+            ],
+            "contextual_terms": [
+                "CRHTLF",
+                "XSS",
+                "URI.js"
+            ],
+            "consequences": [
+                "Security vulnerability",
+                "Data extraction issue",
+                "Websites at risk"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "918",
+        "cwe_guessed_from_terms": "74",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "ASUS RT-AC86U\u2019s LPD service has insufficient filtering for special characters in the user request, which allows an unauthenticated LAN attacker to perform command injection attack, execute arbitrary commands and disrupt or terminate service.",
+        "Terms": {
+            "core_terms": [
+                "Insufficient Filtering",
+                "Command Injection",
+                "Arbitrary Commands"
+            ],
+            "contextual_terms": [
+                "LPD service",
+                "Special Characters",
+                "User request"
+            ],
+            "consequences": [
+                "Unauthorized commands execution",
+                "Service disruption",
+                "Command injection vulnerability"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "78",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Nextcloud Server is the file server software for Nextcloud, a self-hosted productivity platform. Prior to versions 20.0.14.4, 21.0.8, 22.2.4, and 23.0.1, it is possible to create files and folders that have leading and trailing \\n, \\r, \\t, and \\v characters. The server rejects files and folders that have these characters in the middle of their names, so this might be an opportunity for injection. This issue is fixed in versions 20.0.14.4, 21.0.8, 22.2.4, and 23.0.1. There are currently no known workarounds.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "File and Folder Name Manipulation",
+                "Injection Vulnerability"
+            ],
+            "contextual_terms": [
+                "Leading and Trailing Character",
+                "Rejection of Characters",
+                "Vulnerability Opportunity"
+            ],
+            "consequences": [
+                "Possible Injection Attack",
+                "Character Manipulation",
+                "Input Validation Bypass"
+            ]
+        },
+        "CNA_cwe": "74",
+        "cwe_guessed_from_descr": "74",
+        "cwe_guessed_from_terms": "74",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "ESAPI (The OWASP Enterprise Security API) is a free, open source, web application security control library. Prior to version 2.3.0.0, there is a potential for a cross-site scripting vulnerability in ESAPI caused by a incorrect regular expression for \"onsiteURL\" in the **antisamy-esapi.xml** configuration file that can cause \"javascript:\" URLs to fail to be correctly sanitized. This issue is patched in ESAPI 2.3.0.0. As a workaround, manually edit the **antisamy-esapi.xml** configuration files to change the \"onsiteURL\" regular expression. More information about remediation of the vulnerability, including the workaround, is available in the maintainers' release notes and security bulletin.",
+        "Terms": {
+            "core_terms": [
+                "Cross-Site Scripting",
+                "Regular Expression",
+                "Sanitization Failure"
+            ],
+            "contextual_terms": [
+                "ESAPI",
+                "antisamy-esapi.xml",
+                "Javascript URL"
+            ],
+            "consequences": [
+                "Data manipulation",
+                "Security control bypass",
+                "Vulnerability exploitation"
+            ]
+        },
+        "CNA_cwe": "79",
+        "cwe_guessed_from_descr": "94",
+        "cwe_guessed_from_terms": "79",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Code Injection in GitHub repository publify/publify prior to 9.2.8.",
+        "Terms": {
+            "core_terms": [
+                "Code Injection",
+                "GitHub Repository",
+                "Vulnerability"
+            ],
+            "contextual_terms": [
+                "Publify",
+                "Version 9.2.8",
+                "Security issue"
+            ],
+            "consequences": [
+                "Data compromise",
+                "Remote code execution",
+                "Application vulnerability"
+            ]
+        },
+        "CNA_cwe": "94",
+        "cwe_guessed_from_descr": "77",
+        "cwe_guessed_from_terms": "94",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper access control vulnerability in My Files prior to version 13.1.00.193 allows attackers to access arbitrary private files in My Files application.",
+        "Terms": {
+            "core_terms": [
+                "Access Control Vulnerability",
+                "Arbitrary File Access",
+                "My Files Application"
+            ],
+            "contextual_terms": [
+                "Improper Access Control",
+                "Attackers",
+                "Private Files"
+            ],
+            "consequences": [
+                "Unauthorized File Access",
+                "Security Breach",
+                "Application Vulnerability"
+            ]
+        },
+        "CNA_cwe": "862",
+        "cwe_guessed_from_descr": "276",
+        "cwe_guessed_from_terms": "22",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "In registerPhoneAccount of PhoneAccountRegistrar.java, there is a possible way to prevent the user from selecting a phone account due to improper input validation. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12LAndroid ID: A-217934478",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Local Denial of Service",
+                "User Interaction"
+            ],
+            "contextual_terms": [
+                "registerPhoneAccount",
+                "PhoneAccountRegistrar.java",
+                "AndroidVersions"
+            ],
+            "consequences": [
+                "No additional execution privileges",
+                "Potential exploitation",
+                "Preventing user selection"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "120",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper access control vulnerability in TelephonyUI prior to SMR Jul-2022 Release 1 allows attackers to change preferred network type by unprotected binder call.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "TelephonyUI",
+                "Preferred Network Type"
+            ],
+            "contextual_terms": [
+                "Vulnerability",
+                "SMR Jul-2022 Release 1",
+                "Unprotected binder call"
+            ],
+            "consequences": [
+                "Unauthorized network type change",
+                "Security vulnerability",
+                "Exploitable weakness"
+            ]
+        },
+        "CNA_cwe": "287",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "HiCOS\u2019 client-side citizen digital certificate component has a stack-based buffer overflow vulnerability when reading IC card due to insufficient parameter length validation for OS information. An unauthenticated physical attacker can exploit this vulnerability to execute arbitrary code, manipulate system data or terminate service.",
+        "Terms": {
+            "core_terms": [
+                "Buffer Overflow Vulnerability",
+                "Insufficient Parameter Length Validation",
+                "Arbitrary Code Execution"
+            ],
+            "contextual_terms": [
+                "IC card",
+                "Stack-based buffer overflow",
+                "OS information"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "System data manipulation",
+                "Service termination"
+            ]
+        },
+        "CNA_cwe": "787",
+        "cwe_guessed_from_descr": "125",
+        "cwe_guessed_from_terms": "120",
+        "Stefano_CWE": "125",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "The affected product is vulnerable to two instances of command injection, which may allow an attacker to remotely execute arbitrary code.",
+        "Terms": {
+            "core_terms": [
+                "Command Injection Vulnerability",
+                "Remote Code Execution"
+            ],
+            "contextual_terms": [
+                "Attacker",
+                "Vulnerability",
+                "Remotely execute"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Remote exploitation",
+                "System compromise"
+            ]
+        },
+        "CNA_cwe": "77",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper access control and path traversal vulnerability in LauncherProvider prior to SMR Aug-2022 Release 1 allow local attacker to access files of One UI.",
+        "Terms": {
+            "core_terms": [
+                "Access Control Vulnerability",
+                "Path Traversal Vulnerability",
+                "Local File Access"
+            ],
+            "contextual_terms": [
+                "Improper access control",
+                "Path traversal",
+                "Local attacker",
+                "One UI"
+            ],
+            "consequences": [
+                "Unauthorized access",
+                "File disclosure",
+                "Local privilege escalation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "755",
+        "cwe_guessed_from_terms": "22",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An improper access control vulnerability in Wi-Fi Service prior to SMR AUG-2022 Release 1 allows untrusted applications to manipulate the list of apps that can use mobile data.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Untrusted Applications",
+                "Mobile Data Manipulation"
+            ],
+            "contextual_terms": [
+                "Wi-Fi Service",
+                "SMR AUG-2022",
+                "Release 1"
+            ],
+            "consequences": [
+                "Data manipulation",
+                "Untrusted app access",
+                "Access control vulnerability"
+            ]
+        },
+        "CNA_cwe": "863",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "862",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper access control vulnerability in Samsung Dex for PC prior to SMR Aug-2022 Release 1 allows local attackers to scan and connect to PC by unprotected binder call.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Local Attack",
+                "Unprotected Binder Call"
+            ],
+            "contextual_terms": [
+                "Samsung Dex",
+                "PC",
+                "SMR Aug-2022 Release 1"
+            ],
+            "consequences": [
+                "Unauthorized access",
+                "Local exploitation",
+                "Data leakage"
+            ]
+        },
+        "CNA_cwe": "287",
+        "cwe_guessed_from_descr": "287",
+        "cwe_guessed_from_terms": "668",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Adobe Commerce versions 2.4.3-p2 (and earlier), 2.3.7-p3 (and earlier) and 2.4.4 (and earlier) are affected by an Improper Access Control vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to leak minor information of another user's account detials. Exploitation of this issue does not require user interaction.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Security Feature Bypass",
+                "Information Leakage"
+            ],
+            "contextual_terms": [
+                "Adobe Commerce",
+                "Vulnerability",
+                "Exploitation"
+            ],
+            "consequences": [
+                "User account data leakage",
+                "Security compromise",
+                "Exploitation without user interaction"
+            ]
+        },
+        "CNA_cwe": "863",
+        "cwe_guessed_from_descr": "863",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A information disclosure vulnerability exists in Rockert.Chat <v5 due to /api/v1/chat.getThreadsList lack of sanitization of user inputs and can therefore leak private thread messages to unauthorized users via Mongo DB injection.",
+        "Terms": {
+            "core_terms": [
+                "Information Disclosure",
+                "Lack of input sanitization",
+                "MongoDB Injection"
+            ],
+            "contextual_terms": [
+                "User inputs",
+                "Private thread messages",
+                "Unauthorized access"
+            ],
+            "consequences": [
+                "Data leakage",
+                "Confidential information exposure",
+                "Security bypass"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "862",
+        "cwe_guessed_from_terms": "862",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A NoSQL-Injection information disclosure vulnerability vulnerability exists in Rocket.Chat <v5, <v4.8.2 and <v4.7.5 in the getS3FileUrl Meteor server method that can disclose arbitrary file upload URLs to users that should not be able to access.",
+        "Terms": {
+            "core_terms": [
+                "NoSQL Injection",
+                "Information Disclosure",
+                "Vulnerability"
+            ],
+            "contextual_terms": [
+                "Rocket.Chat",
+                "S3FileUrl",
+                "Meteor server method"
+            ],
+            "consequences": [
+                "Arbitrary file upload URLs disclosure",
+                "Unauthorized user access",
+                "Data exposure"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "862",
+        "cwe_guessed_from_terms": "502",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "NuProcess is an external process execution implementation for Java. In all the versions of NuProcess where it forks processes by using the JVM's Java_java_lang_UNIXProcess_forkAndExec method (1.2.0+), attackers can use NUL characters in their strings to perform command line injection. Java's ProcessBuilder isn't vulnerable because of a check in ProcessBuilder.start. NuProcess is missing that check. This vulnerability can only be exploited to inject command line arguments on Linux. Version 2.0.5 contains a patch. As a workaround, users of the library can sanitize command strings to remove NUL characters prior to passing them to NuProcess for execution.",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "NUL character",
+                "Process Execution"
+            ],
+            "contextual_terms": [
+                "Java",
+                "NuProcess",
+                "Process forking"
+            ],
+            "consequences": [
+                "Arbitrary command execution",
+                "Input validation bypass",
+                "Linux-specific vulnerability"
+            ]
+        },
+        "CNA_cwe": "77",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "74",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper access control vulnerability in imsservice application prior to SMR Oct-2022 Release 1 allows local attackers to access call information.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Local Attackers",
+                "Call Information"
+            ],
+            "contextual_terms": [
+                "imsservice application",
+                "SMR Oct-2022 Release 1",
+                "vulnerability"
+            ],
+            "consequences": [
+                "Unauthorized access",
+                "Data exposure",
+                "Security loophole"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "755",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Command injection is possible in the puppetlabs-apt module prior to version 9.0.0. A malicious actor is able to exploit this vulnerability only if they are able to provide unsanitized input to the module. This condition is rare in most deployments of Puppet and Puppet Enterprise.",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "Unsanitized Input",
+                "Vulnerability"
+            ],
+            "contextual_terms": [
+                "Malicious actor",
+                "Puppetlabs-apt module",
+                "Exploit"
+            ],
+            "consequences": [
+                "Unsanitized input exploitation",
+                "Rare condition",
+                "Deployment vulnerability"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "77",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Command injection is possible in the puppetlabs-mysql module prior to version 13.0.0. A malicious actor is able to exploit this vulnerability only if they are able to provide unsanitized input to the module. This condition is rare in most deployments of Puppet and Puppet Enterprise.",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "Puppetlabs-mysql Module",
+                "Unsanitized Input"
+            ],
+            "contextual_terms": [
+                "Malicious actor",
+                "Vulnerability exploitation",
+                "Deployment condition"
+            ],
+            "consequences": [
+                "Remote code execution",
+                "Security compromise",
+                "Limited exploitation"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "77",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A vulnerability classified as problematic has been found in SourceCodester Simple Cold Storage Management System 1.0. Affected is an unknown function of the file /csms/?page=contact_us of the component Contact Us. The manipulation leads to cross-site request forgery. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-211194 is the identifier assigned to this vulnerability.",
+        "Terms": {
+            "core_terms": [
+                "Cross-Site Request Forgery",
+                "Remote Attack",
+                "Public Disclosure"
+            ],
+            "contextual_terms": [
+                "Unknown function",
+                "Contact Us component",
+                "Vulnerability identifier"
+            ],
+            "consequences": [
+                "Remote exploitation",
+                "Potential unauthorized actions",
+                "Security risk"
+            ]
+        },
+        "CNA_cwe": "863",
+        "cwe_guessed_from_descr": "352",
+        "cwe_guessed_from_terms": "352",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "This vulnerable is about a potential code injection when an attacker has control of the target LDAP server using in the JDBC JNDI URL.\n\nThe function jaas.modules.src.main.java.porg.apache.karaf.jass.modules.jdbc.JDBCUtils#doCreateDatasource\nuse InitialContext.lookup(jndiName) without filtering.\nAn user can modify\u00a0`options.put(JDBCUtils.DATASOURCE, \"osgi:\" +\u00a0DataSource.class.getName());` to `options.put(JDBCUtils.DATASOURCE,\"jndi:rmi://x.x.x.x:xxxx/Command\");` in JdbcLoginModuleTest#setup.\n\nThis is vulnerable to a remote code execution (RCE) attack when a\nconfiguration uses a JNDI LDAP data source URI when an attacker has\ncontrol of the target LDAP server.This issue affects all versions of Apache Karaf up to 4.4.1 and 4.3.7.\n\nWe encourage the users to upgrade to Apache Karaf at least 4.4.2 or 4.3.8",
+        "Terms": {
+            "core_terms": [
+                "Code Injection",
+                "LDAP Server Control",
+                "Remote Code Execution"
+            ],
+            "contextual_terms": [
+                "JNDI URL",
+                "JDBCUtils",
+                "Apache Karaf"
+            ],
+            "consequences": [
+                "RCE attack",
+                "Data source URI",
+                "Vulnerable versions"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "74",
+        "cwe_guessed_from_terms": "94",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Realtek GPON router has insufficient filtering for special characters. A remote attacker authenticated as an administrator can exploit this vulnerability to perform command injection attacks, to execute arbitrary system command, manipulate system or disrupt service.",
+        "Terms": {
+            "core_terms": [
+                "Insufficient Filtering",
+                "Command Injection",
+                "Arbitrary System Command Execution"
+            ],
+            "contextual_terms": [
+                "Remote attacker",
+                "Authenticated administrator",
+                "Special characters"
+            ],
+            "consequences": [
+                "System manipulation",
+                "Service disruption",
+                "Unauthorized command execution"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "78",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Versions of the package window-control before 1.4.5 are vulnerable to Command Injection via the sendKeys function, due to improper input sanitization.\r\r",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "Improper Input Sanitization",
+                "Vulnerability"
+            ],
+            "contextual_terms": [
+                "window-control package",
+                "sendKeys function",
+                "input sanitization"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Security vulnerability",
+                "Remote code execution"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "77",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Versions of the package exec-local-bin before 1.2.0 are vulnerable to Command Injection via the theProcess() functionality due to improper user-input sanitization.\r\r",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "User Input Sanitization",
+                "Vulnerability"
+            ],
+            "contextual_terms": [
+                "exec-local-bin package",
+                "theProcess() functionality",
+                "user-input"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Security risk",
+                "Application compromise"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "All versions of the package wifey are vulnerable to Command Injection via the connect() function due to improper input sanitization.\r\r",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "Input Sanitization",
+                "Connect Function"
+            ],
+            "contextual_terms": [
+                "Vulnerability",
+                "Improper input",
+                "Package wifey"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Security compromise",
+                "Function misuse"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Versions of the package global-modules-path before 3.0.0 are vulnerable to Command Injection due to missing input sanitization or other checks and sandboxes being employed to the getPath  function.\r\r",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "Input Sanitization",
+                "Sandbox Bypass"
+            ],
+            "contextual_terms": [
+                "Global-modules-path package",
+                "getPath function",
+                "Vulnerability"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Security bypass",
+                "Risk of privilege escalation"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "77",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "All versions of the package smartctl are vulnerable to Command Injection via the info method due to improper input sanitization.\r\r",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "Input Sanitization",
+                "Vulnerability"
+            ],
+            "contextual_terms": [
+                "Smartctl package",
+                "Info method",
+                "Improper input"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Security risk",
+                "System compromise"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "All versions of the package puppet-facter are vulnerable to Command Injection via the getFact  function due to improper input sanitization.\r\r",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "Improper Input Sanitization",
+                "Vulnerability"
+            ],
+            "contextual_terms": [
+                "puppet-facter",
+                "getFact function",
+                "input sanitization"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Security risk",
+                "Vulnerable version"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "77",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "All versions of the package create-choo-electron are vulnerable to Command Injection via the devInstall  function due to improper user-input sanitization.\r\r",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "User Input Sanitization",
+                "Vulnerability"
+            ],
+            "contextual_terms": [
+                "Package",
+                "devInstall function",
+                "User input"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Security risk",
+                "Improper input validation"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "77",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "All versions of the package vagrant.js are vulnerable to Command Injection via the boxAdd function due to improper input sanitization.\r\r",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "Input Sanitization",
+                "Vulnerable Package"
+            ],
+            "contextual_terms": [
+                "vagrant.js",
+                "boxAdd function",
+                "improper input sanitization"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Security vulnerability",
+                "System compromise"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in adgnetworkwfpdrv.sys in Adguard For Windows x86 through 7.11 allows local privilege escalation.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Local Privilege Escalation",
+                "Adguard For Windows"
+            ],
+            "contextual_terms": [
+                "adgnetworkwfpdrv.sys",
+                "x86",
+                "7.11"
+            ],
+            "consequences": [
+                "Security vulnerability",
+                "Local access elevation",
+                "Windows driver"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "787",
+        "cwe_guessed_from_terms": "269",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Versions of the package nemo-appium before 0.0.9 are vulnerable to Command Injection due to improper input sanitization in the 'module.exports.setup' function.\r\r\r**Note:** In order to exploit this vulnerability appium-running 0.1.3  has to be installed as one of nemo-appium dependencies. \r\r",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "Improper Input Sanitization",
+                "Dependency Vulnerability"
+            ],
+            "contextual_terms": [
+                "Package nemo-appium",
+                "Function 'module.exports.setup'",
+                "Appium-running 0.1.3"
+            ],
+            "consequences": [
+                "Arbitrary command execution",
+                "Security risk",
+                "Dependency exploitation"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "77",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Versions of the package mt7688-wiscan before 0.8.3 are vulnerable to Command Injection due to improper input sanitization in the 'wiscan.scan' function. \r\r",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "Improper Input Sanitization",
+                "Vulnerable Versions"
+            ],
+            "contextual_terms": [
+                "Package mt7688-wiscan",
+                "Function wiscan.scan",
+                "Input sanitization"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Security vulnerability",
+                "Version-specific vulnerability"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "All versions of the package semver-tags are vulnerable to Command Injection via the getGitTagsRemote function due to improper input sanitization.\r\r",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "Input Sanitization",
+                "Vulnerability"
+            ],
+            "contextual_terms": [
+                "semver-tags",
+                "getGitTagsRemote",
+                "Improper input sanitization"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Remote exploitation",
+                "Security risk"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "All versions of the package create-choo-app3 are vulnerable to Command Injection via the devInstall function due to improper user-input sanitization.\r\r",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "User-input Sanitization",
+                "DevInstall Function"
+            ],
+            "contextual_terms": [
+                "Vulnerable package",
+                "User input",
+                "Improper sanitization"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Security compromise",
+                "Function vulnerability"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "77",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Livestatus Query Language (LQL) injection in the AuthUser HTTP query header of\u00a0Tribe29's Checkmk <= 2.1.0p11, Checkmk <= 2.0.0p28, and all versions of Checkmk 1.6.0 (EOL) allows an attacker to perform direct queries to the application's core from localhost.",
+        "Terms": {
+            "core_terms": [
+                "LQL Injection",
+                "HTTP Header Injection",
+                "Localhost Access"
+            ],
+            "contextual_terms": [
+                "AuthUser HTTP query header",
+                "Tribe29's Checkmk",
+                "Direct queries"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Unauthorized data access",
+                "Application compromise"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "74",
+        "cwe_guessed_from_terms": "94",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper access control vulnerability in Call application prior to SMR Mar-2023 Release 1 allows local attackers to access sensitive information without proper permission.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Local Attack",
+                "Sensitive Information Access"
+            ],
+            "contextual_terms": [
+                "Call application",
+                "SMR Mar-2023 Release 1",
+                "Local attackers"
+            ],
+            "consequences": [
+                "Unauthorized access",
+                "Information disclosure",
+                "Security vulnerability"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "287",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An Improper Input Validation vulnerability in Schweitzer Engineering Laboratories SEL-411L could allow an attacker to perform reflection attacks against an authorized and authenticated user.\n\n\n\nSee product Instruction Manual Appendix A dated 20230830 for more details.\n\n\n",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Reflection Attack",
+                "Authorized User"
+            ],
+            "contextual_terms": [
+                "Schweitzer Engineering Laboratories",
+                "SEL-411L",
+                "Instruction Manual"
+            ],
+            "consequences": [
+                "Security vulnerability",
+                "Unauthorized access",
+                "User impersonation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "668",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A vulnerability has been identified in SIMATIC WinCC OA V3.14 and prior (All versions < V3.14-P021). Improper access control to a data point of the affected product could allow an unauthenticated remote user to escalate its privileges in the context of SIMATIC WinCC OA V3.14. This vulnerability could be exploited by an attacker with network access to port 5678/TCP of the SIMATIC WinCC OA V3.14 server. Successful exploitation requires no user privileges and no user interaction. This vulnerability could allow an attacker to compromise integrity and availability of the SIMATIC WinCC OA system. At the time of advisory publication no public exploitation of this vulnerability was known.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Privilege Escalation",
+                "Network Exploitation"
+            ],
+            "contextual_terms": [
+                "SIMATIC WinCC OA",
+                "Vulnerability",
+                "Remote User"
+            ],
+            "consequences": [
+                "Integrity Compromise",
+                "Availability Compromise",
+                "Public Exploitation"
+            ]
+        },
+        "CNA_cwe": "269",
+        "cwe_guessed_from_descr": "668",
+        "cwe_guessed_from_terms": "269",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Moodle before version 3.7.2 is vulnerable to information exposure of service tokens for users enrolled in the same course.",
+        "Terms": {
+            "core_terms": [
+                "Information Exposure",
+                "Service Token Vulnerability",
+                "User Enrollment"
+            ],
+            "contextual_terms": [
+                "Moodle",
+                "Version 3.7.2",
+                "Course enrollment"
+            ],
+            "consequences": [
+                "Unauthorized access",
+                "Confidential data exposure",
+                "User privacy breach"
+            ]
+        },
+        "CNA_cwe": "352",
+        "cwe_guessed_from_descr": "200",
+        "cwe_guessed_from_terms": "668",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Juniper Networks Junos OS uses the 128.0.0.0/2 subnet for internal communications between the RE and PFEs. It was discovered that packets utilizing these IP addresses may egress an EX4300 switch, leaking configuration information such as heartbeats, kernel versions, etc. out to the Internet, leading to an information exposure vulnerability. This issue affects Juniper Networks Junos OS: 14.1X53 versions prior to 14.1X53-D53 on EX4300; 15.1 versions prior to 15.1R7-S6 on EX4300; 15.1X49 versions prior to 15.1X49-D200, 15.1X49-D210 on EX4300; 16.1 versions prior to 16.1R7-S7 on EX4300; 17.1 versions prior to 17.1R2-S11, 17.1R3-S2 on EX4300; 17.2 versions prior to 17.2R3-S3 on EX4300; 17.3 versions prior to 17.3R2-S5, 17.3R3-S7 on EX4300; 17.4 versions prior to 17.4R2-S9, 17.4R3 on EX4300; 18.1 versions prior to 18.1R3-S8 on EX4300; 18.2 versions prior to 18.2R3-S2 on EX4300; 18.3 versions prior to 18.3R2-S3, 18.3R3, 18.3R3-S1 on EX4300; 18.4 versions prior to 18.4R1-S5, 18.4R2-S3, 18.4R3 on EX4300; 19.1 versions prior to 19.1R1-S4, 19.1R2 on EX4300; 19.2 versions prior to 19.2R1-S4, 19.2R2 on EX4300; 19.3 versions prior to 19.3R1-S1, 19.3R2 on EX4300.",
+        "Terms": {
+            "core_terms": [
+                "Information Exposure",
+                "IP Address Leakage",
+                "Configuration Information Disclosure"
+            ],
+            "contextual_terms": [
+                "Juniper Networks Junos OS",
+                "EX4300 switch",
+                "Internal communication"
+            ],
+            "consequences": [
+                "Data leakage",
+                "Sensitive information exposure",
+                "Network vulnerability"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "200",
+        "cwe_guessed_from_terms": "326",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "ARC Informatique PcVue prior to version 12.0.17 is vulnerable to information exposure, allowing unauthorized users to access session data of legitimate users. This issue also affects third-party systems based on the Web Services Toolkit.",
+        "Terms": {
+            "core_terms": [
+                "Information Exposure",
+                "Unauthorized Access",
+                "Session Data Access"
+            ],
+            "contextual_terms": [
+                "ARC Informatique PcVue",
+                "Web Services Toolkit",
+                "Vulnerability"
+            ],
+            "consequences": [
+                "Data breach",
+                "Unauthorized data access",
+                "Session hijacking"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "200",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Eaton Intelligent Power Manager (IPM) prior to 1.69 is vulnerable to authenticated arbitrary file delete vulnerability induced due to improper input validation at server/maps_srv.js with action removeBackground and server/node_upgrade_srv.js with action removeFirmware. An attacker can send specially crafted packets to delete the files on the system where IPM software is installed.",
+        "Terms": {
+            "core_terms": [
+                "Arbitrary File Delete Vulnerability",
+                "Improper Input Validation",
+                "Specially Crafted Packets"
+            ],
+            "contextual_terms": [
+                "Authenticated",
+                "Server/maps_srv.js",
+                "Server/node_upgrade_srv.js"
+            ],
+            "consequences": [
+                "File deletion",
+                "System compromise",
+                "Vulnerability exploitation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "863",
+        "cwe_guessed_from_terms": "78",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "On BIG-IP Advanced WAF and BIG-IP ASM version 16.0.x before 16.0.1.2 and 15.1.x before 15.1.3 and NGINX App Protect on all versions before 3.5.0, when a cross-site request forgery (CSRF)-enabled policy is configured on a virtual server, an undisclosed HTML response may cause the bd process to terminate. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+        "Terms": {
+            "core_terms": [
+                "CSRF Vulnerability",
+                "HTML Response Termination",
+                "Process Termination"
+            ],
+            "contextual_terms": [
+                "Cross-site request forgery",
+                "Policy configuration",
+                "Virtual server"
+            ],
+            "consequences": [
+                "Undisclosed HTML response",
+                "Process termination",
+                "Service disruption"
+            ]
+        },
+        "CNA_cwe": "352",
+        "cwe_guessed_from_descr": "352",
+        "cwe_guessed_from_terms": "352",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "The usage of an internal HTTP header created an authentication bypass vulnerability (CWE-287), allowing an attacker to view internal files, change settings, manipulate services and execute arbitrary code. This issue affects all Juniper Networks 128 Technology Session Smart Router versions prior to 4.5.11, and all versions of 5.0 up to and including 5.0.1.",
+        "Terms": {
+            "core_terms": [
+                "Authentication Bypass Vulnerability",
+                "Internal HTTP Header",
+                "Remote Code Execution"
+            ],
+            "contextual_terms": [
+                "Juniper Networks",
+                "128 Technology Session Smart Router",
+                "Internal files manipulation"
+            ],
+            "consequences": [
+                "Settings change",
+                "Service manipulation",
+                "Arbitrary code execution"
+            ]
+        },
+        "CNA_cwe": "287",
+        "cwe_guessed_from_descr": "287",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Juniper Networks Junos OS uses the 128.0.0.0/2 subnet for internal communications between the RE and PFEs. It was discovered that packets utilizing these IP addresses may egress an QFX5000 Series switch, leaking configuration information such as heartbeats, kernel versions, etc. out to the Internet, leading to an information exposure vulnerability. This issue affects Juniper Networks Junos OS on QFX5110, QFX5120, QFX5200, QFX5210 Series, and QFX5100 with QFX 5e Series image installed: All versions prior to 17.3R3-S12; 18.1 versions prior to 18.1R3-S13; 18.3 versions prior to 18.3R3-S5; 19.1 versions prior to 19.1R3-S6; 19.2 versions prior to 19.2R1-S7, 19.2R3-S3; 19.3 versions prior to 19.3R2-S6, 19.3R3-S3; 19.4 versions prior to 19.4R1-S4, 19.4R3-S5; 20.1 versions prior to 20.1R2-S2, 20.1R3-S1; 20.2 versions prior to 20.2R3-S2; 20.3 versions prior to 20.3R3-S1; 20.4 versions prior to 20.4R2-S1, 20.4R3; 21.1 versions prior to 21.1R1-S1, 21.1R2;",
+        "Terms": {
+            "core_terms": [
+                "IP Address Leakage",
+                "Information Exposure",
+                "Configuration Data Leak"
+            ],
+            "contextual_terms": [
+                "Internal communications",
+                "Subnet leakage",
+                "Packet egress"
+            ],
+            "consequences": [
+                "Data exposure",
+                "Security compromise",
+                "Kernel version disclosure"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "200",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A CWE-200: Information Exposure vulnerability exists which could allow a session hijack when the door panel is communicating with the door. Affected Product: Ritto Wiser Door (All versions)",
+        "Terms": {
+            "core_terms": [
+                "Information Exposure",
+                "Session Hijacking",
+                "Door Communication"
+            ],
+            "contextual_terms": [
+                "Door Panel",
+                "Affected Product",
+                "Communication vulnerability"
+            ],
+            "consequences": [
+                "Unauthorized access",
+                "Data disclosure",
+                "Session compromise"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "200",
+        "cwe_guessed_from_terms": "668",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Microprogram\u2019s parking lot management system is vulnerable to sensitive information exposure. An unauthorized remote attacker can input specific URLs to acquire partial system configuration information.",
+        "Terms": {
+            "core_terms": [
+                "Information Exposure",
+                "Unauthorized Remote Input",
+                "Sensitive Data Disclosure"
+            ],
+            "contextual_terms": [
+                "Parking Lot Management System",
+                "Remote Attacker",
+                "System Configuration Information"
+            ],
+            "consequences": [
+                "Data Exposure",
+                "Unauthorized Access",
+                "System Configuration Leakage"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "668",
+        "cwe_guessed_from_terms": "532",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Information Exposure vulnerability in web UI of Secomea GateManager allows logged in user to query devices outside own scope.",
+        "Terms": {
+            "core_terms": [
+                "Information Exposure Vulnerability",
+                "Web UI",
+                "Secomea GateManager"
+            ],
+            "contextual_terms": [
+                "Logged in user",
+                "Query devices",
+                "Scope"
+            ],
+            "consequences": [
+                "Unauthorized data access",
+                "User scope bypass",
+                "Security breach"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "668",
+        "cwe_guessed_from_terms": "668",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Jupyter Server provides the backend (i.e. the core services, APIs, and REST endpoints) for Jupyter web applications like Jupyter Notebook. Prior to version 1.17.1, if notebook server is started with a value of `root_dir` that contains the starting user's home directory, then the underlying REST API can be used to leak the access token assigned at start time by guessing/brute forcing the PID of the jupyter server. While this requires an authenticated user session, this URL can be used from a cross-site scripting payload or from a hooked or otherwise compromised browser to leak this access token to a malicious third party. This token can be used along with the REST API to interact with Jupyter services/notebooks such as modifying or overwriting critical files, such as .bashrc or .ssh/authorized_keys, allowing a malicious user to read potentially sensitive data and possibly gain control of the impacted system. This issue is patched in version 1.17.1.",
+        "Terms": {
+            "core_terms": [
+                "Access Token Leak",
+                "Cross-Site Scripting",
+                "Authentication Bypass"
+            ],
+            "contextual_terms": [
+                "Jupyter Server",
+                "REST API",
+                "Authenticated User Session"
+            ],
+            "consequences": [
+                "Unauthorized Data Access",
+                "System Compromise",
+                "Information Disclosure"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "668",
+        "cwe_guessed_from_terms": "522",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Apache Jetspeed-2 does not sufficiently filter untrusted user input by default leading to a number of issues including XSS, CSRF, XXE, and SSRF. Setting the configuration option \"xss.filter.post = true\" may mitigate these issues. NOTE: Apache Jetspeed is a dormant project of Apache Portals and no updates will be provided for this issue",
+        "Terms": {
+            "core_terms": [
+                "Insufficient Input Validation",
+                "Cross-Site Scripting",
+                "Cross-Site Request Forgery"
+            ],
+            "contextual_terms": [
+                "Untrusted user input",
+                "Configuration option",
+                "Dormant project"
+            ],
+            "consequences": [
+                "Security vulnerabilities",
+                "Lack of updates",
+                "Mitigation option"
+            ]
+        },
+        "CNA_cwe": "79",
+        "cwe_guessed_from_descr": "79",
+        "cwe_guessed_from_terms": "352",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Dell Client BIOS Versions prior to the remediated version contain an improper input validation vulnerability. A local authenticated malicious user may potentially exploit this vulnerability by using an SMI to gain arbitrary code execution in SMRAM.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "SMI Attack",
+                "Arbitrary Code Execution"
+            ],
+            "contextual_terms": [
+                "Local authenticated user",
+                "SMRAM",
+                "Improper input validation"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Local privilege escalation",
+                "Security boundary compromise"
+            ]
+        },
+        "CNA_cwe": "119",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "NVIDIA GPU Display Driver for Linux contains a vulnerability in the kernel mode layer (nvidia.ko), where a local user with basic capabilities can cause improper input validation, which may lead to denial of service, escalation of privileges, data tampering, and limited information disclosure.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Kernel Mode Vulnerability",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "NVIDIA GPU Display Driver",
+                "Linux",
+                "nvidia.ko"
+            ],
+            "consequences": [
+                "Denial of Service",
+                "Data Tampering",
+                "Limited Information Disclosure"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "755",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A vulnerability in the CLI of Cisco TelePresence CE and RoomOS Software could allow an authenticated, local attacker to overwrite arbitrary files on the local system of an affected device.\r\n\r This vulnerability is due to improper access controls on files that are in the local file system. An attacker could exploit this vulnerability by placing a symbolic link in a specific location on the local file system of an affected device. A successful exploit could allow the attacker to overwrite arbitrary files on the affected device.",
+        "Terms": {
+            "core_terms": [
+                "File Overwrite Vulnerability",
+                "Improper Access Controls",
+                "Symbolic Link Exploit"
+            ],
+            "contextual_terms": [
+                "CLI",
+                "Local attacker",
+                "Local file system"
+            ],
+            "consequences": [
+                "Arbitrary file overwrite",
+                "Improper access control",
+                "System compromise"
+            ]
+        },
+        "CNA_cwe": "59",
+        "cwe_guessed_from_descr": "59",
+        "cwe_guessed_from_terms": "59",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A CWE-200: Exposure of Sensitive Information to an Unauthorized Actor vulnerability exists that could cause information disclosure when specific messages are sent to the server over the database server TCP port. Affected Products: EcoStruxure Geo SCADA Expert 2019 - 2021 (formerly known as ClearSCADA) (Versions prior to October 2022)",
+        "Terms": {
+            "core_terms": [
+                "Information Disclosure",
+                "Unauthorized Actor",
+                "Vulnerability"
+            ],
+            "contextual_terms": [
+                "Specific Messages",
+                "Database Server",
+                "TCP Port"
+            ],
+            "consequences": [
+                "Information Exposure",
+                "Data Leakage",
+                "Security Breach"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "319",
+        "cwe_guessed_from_terms": "668",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Sunell DVR, latest version, CWE-200: Exposure of Sensitive Information to an Unauthorized Actor through an unspecified request.",
+        "Terms": {
+            "core_terms": [
+                "Sensitive Information Exposure",
+                "Unauthorized Actor",
+                "Unspecified Request"
+            ],
+            "contextual_terms": [
+                "Data Exposure",
+                "Access Control",
+                "Unspecified Request"
+            ],
+            "consequences": [
+                "Data Leakage",
+                "Unauthorized Access",
+                "Information Disclosure"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "200",
+        "cwe_guessed_from_terms": "532",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Versions of the package @nestjs/core before 9.0.5 are vulnerable to Information Exposure via the StreamableFile pipe. Exploiting this vulnerability is possible when the client cancels a request while it is streaming a StreamableFile, the stream wrapped by the StreamableFile will be kept open.",
+        "Terms": {
+            "core_terms": [
+                "Information Exposure",
+                "StreamableFile Vulnerability",
+                "Client Request Cancellation"
+            ],
+            "contextual_terms": [
+                "StreamableFile pipe",
+                "Client cancellation",
+                "Stream handling"
+            ],
+            "consequences": [
+                "Open stream vulnerability",
+                "Data exposure risk",
+                "Client request impact"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "532",
+        "cwe_guessed_from_terms": "200",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A vulnerability in the Spectrum Scale 5.0.5.0 through 5.1.6.1 core component could allow unauthorized access to user data or injection of arbitrary data in the communication protocol.  IBM X-Force ID:  191695.",
+        "Terms": {
+            "core_terms": [
+                "Unauthorized Access",
+                "Arbitrary Data Injection",
+                "Communication Protocol Vulnerability"
+            ],
+            "contextual_terms": [
+                "Spectrum Scale",
+                "Core Component",
+                "IBM X-Force ID"
+            ],
+            "consequences": [
+                "User data compromise",
+                "Protocol manipulation",
+                "Security vulnerability"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "203",
+        "cwe_guessed_from_terms": "862",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An exposure of sensitive information to an unauthorized actor vulnerability [CWE-200] in FortiNAC 9.4.1 and below, 9.2.6 and below, 9.1.8 and below, 8.8.11 and below, 8.7.6 and below may allow an unauthenticated attacker to access sensitive information via crafted HTTP requests.",
+        "Terms": {
+            "core_terms": [
+                "Sensitive Information Exposure",
+                "Unauthenticated Access",
+                "Crafted HTTP Requests"
+            ],
+            "contextual_terms": [
+                "Vulnerability",
+                "Unauthorized access",
+                "HTTP requests"
+            ],
+            "consequences": [
+                "Information disclosure",
+                "Attack vector",
+                "Security impact"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "203",
+        "cwe_guessed_from_terms": "200",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "The sensitive information exposure vulnerability in the CGI \u201cExport_Log\u201d and the binary \u201czcmd\u201d in Zyxel DX5401-B0 firmware versions prior to V5.17(ABYO.1)C0 could allow a remote unauthenticated attacker to read the system files and to retrieve the password of the supervisor from the encrypted file.",
+        "Terms": {
+            "core_terms": [
+                "Sensitive Information Exposure",
+                "Unauthenticated Access",
+                "Password Retrieval"
+            ],
+            "contextual_terms": [
+                "CGI Export_Log",
+                "Binary zcmd",
+                "Zyxel DX5401-B0 firmware"
+            ],
+            "consequences": [
+                "Remote attack",
+                "System file access",
+                "Supervisor password retrieval"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "532",
+        "cwe_guessed_from_terms": "532",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation for some Intel(R) BIOS firmware may allow a privileged user to potentially enable escalation of privilege via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "Privilege Escalation",
+                "Intel BIOS Firmware"
+            ],
+            "contextual_terms": [
+                "Improper input validation",
+                "Privileged user",
+                "Local access"
+            ],
+            "consequences": [
+                "Potential privilege escalation",
+                "Local exploit",
+                "Security vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in the BIOS firmware for some Intel(R) Processors may allow a privileged user to potentially enable escalation of privilege via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "BIOS Firmware",
+                "Privileged User"
+            ],
+            "contextual_terms": [
+                "Intel Processor",
+                "Local Access",
+                "Escalation of Privilege"
+            ],
+            "consequences": [
+                "Improper Input Handling",
+                "Privilege Escalation",
+                "Local Security Vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in BIOS firmware for some Intel(R) NUC 9 Extreme Laptop Kits, Intel(R) NUC Performance Kits, Intel(R) NUC Performance Mini PC, Intel(R) NUC 8 Compute Element, Intel(R) NUC Pro Kit, Intel(R) NUC Pro Board, and Intel(R) NUC Compute Element may allow a privileged user to potentially enable escalation of privilege via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "BIOS Firmware",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "Intel NUC",
+                "Local Access",
+                "Privileged User"
+            ],
+            "consequences": [
+                "Escalation of Privilege",
+                "Local Exploitation",
+                "Security Vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "345",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in firmware for Intel(R) NUC 8 Compute Element, Intel(R) NUC 11 Compute Element, Intel(R) NUC 12 Compute Element may allow a privileged user to enable escalation of privilege via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "Privilege Escalation",
+                "Firmware"
+            ],
+            "contextual_terms": [
+                "Local Access",
+                "Privileged User",
+                "Compute Element"
+            ],
+            "consequences": [
+                "Escalation of Privilege",
+                "Local Access Vulnerability",
+                "Firmware Vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "295",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in BIOS firmware for Intel(R) NUC, Intel(R) NUC Performance Kit, Intel(R) NUC Performance Mini PC, Intel(R) NUC 8 Compute Element, Intel(R) NUC Pro Kit, Intel(R) NUC Pro Board, Intel(R) NUC 11 Compute Element, Intel(R) NUC 12 Compute Element, Intel(R) NUC Extreme, Intel(R) NUC 12 Extreme Compute Element, Intel(R) NUC Laptop Kit, Intel(R) NUC Enthusiast, Intel(R) NUC Essential, Intel(R) NUC Laptop Kit, Intel(R) NUC Extreme Compute Element, Intel(R) NUC Boards, Intel(R) NUC Pro Compute Element, Intel(R) NUC Rugged may allow a privileged user to enable information disclosure via local access.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "BIOS Firmware",
+                "Information Disclosure"
+            ],
+            "contextual_terms": [
+                "Privileged User",
+                "Local Access",
+                "Intel NUC"
+            ],
+            "consequences": [
+                "Enable information disclosure",
+                "Privileged user access",
+                "Local access vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "125",
+        "cwe_guessed_from_terms": "200",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in firmware for some Intel(R) FPGA products before version 2.7.0 Hotfix may allow an authenticated user to potentially enable escalation of privilege via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Firmware Vulnerability",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "Intel FPGA products",
+                "Local access",
+                "Authenticated user"
+            ],
+            "consequences": [
+                "Escalation of privilege",
+                "Unauthorized actions",
+                "Security vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "755",
+        "cwe_guessed_from_terms": "345",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in some Intel(R) Server Board BMC firmware before version 2.90 may allow a privileged user to enable information disclosure via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Information Disclosure",
+                "Privileged User"
+            ],
+            "contextual_terms": [
+                "BMC Firmware",
+                "Intel Server Board",
+                "Local Access"
+            ],
+            "consequences": [
+                "Improper Input Validation",
+                "Potential Information Exposure",
+                "Privilege Escalation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "200",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in some Intel(R) Server Board BMC firmware before version 2.90 may allow a privileged user to enable information disclosure via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Server Board BMC Firmware",
+                "Information Disclosure"
+            ],
+            "contextual_terms": [
+                "Privileged User",
+                "Local Access",
+                "Firmware Vulnerability"
+            ],
+            "consequences": [
+                "Information Disclosure",
+                "Privilege Escalation",
+                "Local Security Risk"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "434",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in the Intel(R) Retail Edge Mobile Android application before version 3.0.301126-RELEASE may allow an authenticated user to potentially enable denial of service via local access.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Denial of Service",
+                "Android Application"
+            ],
+            "contextual_terms": [
+                "Authenticated user",
+                "Local Access",
+                "Vulnerability"
+            ],
+            "consequences": [
+                "Potential enabling of DoS",
+                "Authentication bypass",
+                "Local exploitation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "125",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in some Intel(R) Server Board BMC firmware before version 2.90 may allow a privileged user to enable information disclosure via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Intel Server Board",
+                "BMC Firmware"
+            ],
+            "contextual_terms": [
+                "Privileged user",
+                "Information disclosure",
+                "Local access"
+            ],
+            "consequences": [
+                "Improper input validation",
+                "Potential information leakage",
+                "Security vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "200",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": " Improper input validation  in the Zoom for Windows, Zoom Rooms, Zoom VDI Windows Meeting  clients before 5.14.0  may allow an authenticated user to potentially enable an escalation of privilege  via network access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Privilege Escalation",
+                "Zoom Client"
+            ],
+            "contextual_terms": [
+                "Authenticated user",
+                "Network access",
+                "Windows"
+            ],
+            "consequences": [
+                "Improper validation",
+                "Escalation potential",
+                "Security vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "347",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation  in the installer for Zoom for Windows clients before 5.14.0  may allow an authenticated user to potentially enable an escalation of privilege  via local access. \n\n",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Installer Vulnerability",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "Zoom for Windows clients",
+                "Authenticated user",
+                "Local access"
+            ],
+            "consequences": [
+                "Escalation of privilege",
+                "Improper input validation",
+                "Local exploitation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "345",
+        "cwe_guessed_from_terms": "732",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Weak Configuration due to improper input validation in Modem while processing LTE security mode command message received from network.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Weak Configuration",
+                "LTE Security Mode"
+            ],
+            "contextual_terms": [
+                "Modem",
+                "Command Message",
+                "Network"
+            ],
+            "consequences": [
+                "Security vulnerability",
+                "Potential exploitation",
+                "Configuration weakness"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "755",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in the Zoom Desktop Client for Windows before version 5.15.0 may allow an unauthorized user to enable an escalation of privilege via network access.\n",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Privilege Escalation",
+                "Zoom Desktop Client"
+            ],
+            "contextual_terms": [
+                "Network access",
+                "Unauthorized user",
+                "Windows"
+            ],
+            "consequences": [
+                "Improper input validation",
+                "Unauthorized privilege escalation",
+                "Security vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "22",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper Input Validation in the hyperlink interpretation in\u00a0Savoir-faire Linux's Jami (version 20222284)\u00a0on Windows. \n\nThis allows an attacker to send a custom HTML anchor tag to pass a string value to the Windows QRC Handler through the Jami messenger.\n\n",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "HTML Injection",
+                "QRC Handler Manipulation"
+            ],
+            "contextual_terms": [
+                "Hyperlink interpretation",
+                "Custom HTML anchor tag",
+                "Windows QRC Handler"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "System compromise",
+                "Security bypass"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "601",
+        "cwe_guessed_from_terms": "74",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in Zoom Desktop Client for Windows before 5.14.7 may allow an unauthenticated user to enable an escalation of privilege via network access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Escalation of Privilege",
+                "Unauthenticated User"
+            ],
+            "contextual_terms": [
+                "Zoom Desktop Client",
+                "Windows",
+                "Network Access"
+            ],
+            "consequences": [
+                "Improper input validation",
+                "Privilege escalation",
+                "Unauthenticated access"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "295",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in Zoom SDK\u2019s before 5.14.10 may allow an unauthenticated user to enable a denial of service via network access.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Denial of Service",
+                "Zoom SDK"
+            ],
+            "contextual_terms": [
+                "Input Validation",
+                "Unauthenticated User",
+                "Network Access"
+            ],
+            "consequences": [
+                "Service Denial",
+                "Unauthorized Access",
+                "Vulnerability Exploitation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "755",
+        "cwe_guessed_from_terms": "787",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in some Intel(R) PROSet/Wireless WiFi and Killer(TM) WiFi software may allow an unauthenticated user to potentially enable denial of service via adjacent access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "Denial of Service",
+                "Unauthenticated Access"
+            ],
+            "contextual_terms": [
+                "Intel PROSet/Wireless WiFi",
+                "Killer WiFi",
+                "Improper input validation"
+            ],
+            "consequences": [
+                "Potential denial of service",
+                "Unauthenticated access",
+                "Adjacent access vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "863",
+        "cwe_guessed_from_terms": "306",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in some firmware for Intel(R) AMT and Intel(R) Standard Manageability before versions 11.8.94, 11.12.94, 11.22.94, 12.0.93, 14.1.70, 15.0.45, and 16.1.27 in Intel (R) CSME may allow an unauthenticated user to potentially enable denial of service via network access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "Firmware Vulnerability",
+                "Denial of Service"
+            ],
+            "contextual_terms": [
+                "Intel AMT",
+                "Intel Standard Manageability",
+                "CSME"
+            ],
+            "consequences": [
+                "Unauthenticated access",
+                "Network-based attack",
+                "Service disruption"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "400",
+        "cwe_guessed_from_terms": "345",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in BIOS firmware for some Intel(R) NUC may allow a privileged user to potentially enable escalation of privilege via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "BIOS Firmware",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "Improper input validation",
+                "Intel NUC",
+                "Local access"
+            ],
+            "consequences": [
+                "Escalation of privilege",
+                "Vulnerability in BIOS firmware",
+                "Local privilege escalation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in some Intel(R) PROSet/Wireless WiFi and Killer(TM) WiFi software may allow an authenticated user to potentially enable escalation of privilege via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Privilege Escalation",
+                "WiFi Software"
+            ],
+            "contextual_terms": [
+                "Improper validation",
+                "Authenticated user",
+                "Local access"
+            ],
+            "consequences": [
+                "Escalation of privilege",
+                "Security vulnerability",
+                "Local exploitation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "862",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper Input validation in firmware for some Intel(R) Converged Security and Management Engine before versions 15.0.45, and 16.1.27 may allow a privileged user to potentially enable denial of service via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Firmware Vulnerability",
+                "Denial of Service"
+            ],
+            "contextual_terms": [
+                "Privileged user",
+                "Local access",
+                "Intel Converged Security"
+            ],
+            "consequences": [
+                "Potential denial of service",
+                "Local privilege escalation",
+                "Firmware vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in the BIOS firmware for some Intel(R) Processors may allow a privileged user to potentially enable escalation of privilege via adjacent access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "BIOS Firmware",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "Intel Processors",
+                "Adjacent Access"
+            ],
+            "consequences": [
+                "Escalation of Privilege",
+                "Security vulnerability",
+                "System compromise"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in some Intel(R) NUC BIOS firmware may allow a privileged user to potentially enable escalation of privilege via local access.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "BIOS Firmware Vulnerability",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "Intel NUC",
+                "Local Access",
+                "Privileged User"
+            ],
+            "consequences": [
+                "Escalation of Privilege",
+                "Security Vulnerability",
+                "Local Exploitation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in BIOS firmware for some Intel(R) NUCs may allow a privileged user to potentially enable escalation of privilege via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "BIOS Firmware",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "Intel NUCs",
+                "Local Access",
+                "Privileged User"
+            ],
+            "consequences": [
+                "Escalation of Privilege",
+                "Security Vulnerability",
+                "Local Exploitation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in some Intel(R) NUC Rugged Kit, Intel(R) NUC Kit and Intel(R) Compute Element BIOS firmware may allow a privileged user to potentially enable escalation of privilege via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Privilege Escalation",
+                "BIOS Firmware"
+            ],
+            "contextual_terms": [
+                "Intel NUC",
+                "Rugged Kit",
+                "Compute Element"
+            ],
+            "consequences": [
+                "Local Access",
+                "Vulnerability",
+                "Security Risk"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "345",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in some Intel(R) NUC BIOS firmware may allow a privileged user to potentially enable escalation of privilege via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "BIOS Firmware",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "Improper input validation",
+                "Intel NUC",
+                "Local access"
+            ],
+            "consequences": [
+                "Privilege escalation",
+                "Local exploit",
+                "Security vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Due to improper input validation, a remote attacker could execute arbitrary commands on the target system.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Remote Code Execution",
+                "Arbitrary Commands"
+            ],
+            "contextual_terms": [
+                "Improper Input Validation",
+                "Remote Attacker",
+                "Target System"
+            ],
+            "consequences": [
+                "Security vulnerability",
+                "Arbitrary code execution",
+                "System compromise"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "IBM AIX 7.2, 7.3, VIOS 3.1's OpenSSH implementation could allow a non-privileged local user to access files outside of those allowed due to improper access controls.  IBM X-Force ID:  263476.",
+        "Terms": {
+            "core_terms": [
+                "Improper Access Control",
+                "Local File Access",
+                "OpenSSH Vulnerability"
+            ],
+            "contextual_terms": [
+                "Non-privileged user",
+                "File access",
+                "Access controls"
+            ],
+            "consequences": [
+                "Unauthorized file access",
+                "Security bypass",
+                "System compromise"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "732",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "IBM Security Guardium 10.6, 11.3, and 11.4 could allow an authenticated user to cause a denial of service due to due to improper input validation.  IBM X-Force ID:  240894.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Denial of Service",
+                "Authenticated User"
+            ],
+            "contextual_terms": [
+                "IBM Security Guardium",
+                "Input Validation",
+                "IBM X-Force ID"
+            ],
+            "consequences": [
+                "Application crash",
+                "Service disruption",
+                "Security vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "306",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "IBM Aspera Faspex 5.0.5 could allow a remote attacker to gather sensitive information about the web application, caused by an insecure configuration.  IBM X-Force ID:  222592.",
+        "Terms": {
+            "core_terms": [
+                "Information Disclosure",
+                "Insecure Configuration",
+                "Sensitive Information Exposure"
+            ],
+            "contextual_terms": [
+                "Remote attacker",
+                "Web application",
+                "IBM X-Force ID"
+            ],
+            "consequences": [
+                "Gathering sensitive information",
+                "Security misconfiguration",
+                "Web application vulnerability"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "203",
+        "cwe_guessed_from_terms": "200",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Azure HDInsight Apache Ambari JDBC Injection Elevation of Privilege Vulnerability",
+        "Terms": {
+            "core_terms": [
+                "JDBC Injection",
+                "Elevation of Privilege",
+                "Vulnerability"
+            ],
+            "contextual_terms": [
+                "Azure HDInsight",
+                "Apache Ambari"
+            ],
+            "consequences": [
+                "Security risk",
+                "Unauthorized access",
+                "Data manipulation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "74",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper Input Validation, Uncontrolled Resource Consumption vulnerability in Apache Commons Compress in TAR parsing.This issue affects Apache Commons Compress:\u00a0from 1.22 before 1.24.0.\n\nUsers are recommended to upgrade to version 1.24.0, which fixes the issue.\n\nA third party can create a malformed TAR file by manipulating file modification times headers, which when parsed with Apache Commons Compress, will cause a denial of service issue via CPU consumption.\n\nIn version 1.22 of Apache Commons Compress, support was added for file modification times with higher precision (issue # COMPRESS-612 [1]). The format for the PAX extended headers carrying this data consists of two numbers separated by a period [2], indicating seconds and subsecond precision (for example \u201c1647221103.5998539\u201d). The impacted fields are \u201catime\u201d, \u201cctime\u201d, \u201cmtime\u201d and \u201cLIBARCHIVE.creationtime\u201d. No input validation is performed prior to the parsing of header values.\n\nParsing of these numbers uses the BigDecimal [3] class from the JDK which has a publicly known algorithmic complexity issue when doing operations on large numbers, causing denial of service (see issue # JDK-6560193 [4]). A third party can manipulate file time headers in a TAR file by placing a number with a very long fraction (300,000 digits) or a number with exponent notation (such as \u201c9e9999999\u201d) within a file modification time header, and the parsing of files with these headers will take hours instead of seconds, leading to a denial of service via exhaustion of CPU resources. This issue is similar to CVE-2012-2098 [5].\n\n[1]:  https://issues.apache.org/jira/browse/COMPRESS-612 \n[2]:  https://pubs.opengroup.org/onlinepubs/9699919799/utilities/pax.html#tag_20_92_13_05 \n[3]:  https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html \n[4]:  https://bugs.openjdk.org/browse/JDK-6560193 \n[5]:  https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2098 \n\nOnly applications using CompressorStreamFactory class (with auto-detection of file types), TarArchiveInputStream and TarFile classes to parse TAR files are impacted. Since this code was introduced in v1.22, only that version and later versions are impacted.\n\n",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Resource Consumption Vulnerability",
+                "Resource Exhaustion"
+            ],
+            "contextual_terms": [
+                "TAR parsing",
+                "File modification times headers",
+                "PAX extended headers"
+            ],
+            "consequences": [
+                "Denial of service",
+                "CPU consumption",
+                "Exhaustion of CPU resources"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "400",
+        "cwe_guessed_from_terms": "400",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "NVIDIA DGX H100 BMC contains a vulnerability in the KVM service, where an attacker may cause improper input validation. A successful exploit of this vulnerability may lead to code execution, denial of service, escalation of privileges, and information disclosure.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "Code Execution",
+                "Denial of Service"
+            ],
+            "contextual_terms": [
+                "KVM service",
+                "Improper input validation",
+                "Vulnerability exploitation"
+            ],
+            "consequences": [
+                "Escalation of privileges",
+                "Information disclosure",
+                "Service disruption"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "125",
+        "cwe_guessed_from_terms": "476",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "NVIDIA DGX H100 BMC contains a vulnerability in the web UI, where an attacker may cause improper input validation. A successful exploit of this vulnerability may lead to information disclosure, code execution, and escalation of privileges.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "Information Disclosure",
+                "Code Execution"
+            ],
+            "contextual_terms": [
+                "Web UI",
+                "BMC",
+                "Improper input validation"
+            ],
+            "consequences": [
+                "Privilege escalation",
+                "Data disclosure",
+                "Execution of arbitrary code"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "94",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "NVIDIA DGX H100 BMC contains a vulnerability in IPMI, where an attacker may cause improper input validation. A successful exploit of this vulnerability may lead to code execution, denial of service, escalation of privileges, information disclosure, and data tampering.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Code Execution",
+                "Denial of Service"
+            ],
+            "contextual_terms": [
+                "NVIDIA DGX H100 BMC",
+                "IPMI",
+                "Vulnerability",
+                "Attacker",
+                "Exploit"
+            ],
+            "consequences": [
+                "Escalation of Privileges",
+                "Information Disclosure",
+                "Data Tampering"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "78",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A content spoofing vulnerability was found in Kiali. It was discovered that Kiali does not implement error handling when the page or endpoint being accessed cannot be found. This issue allows an attacker to perform arbitrary text injection when an error response is retrieved from the URL being accessed.",
+        "Terms": {
+            "core_terms": [
+                "Content Spoofing",
+                "Error Handling",
+                "Arbitrary Text Injection"
+            ],
+            "contextual_terms": [
+                "Page or endpoint not found",
+                "Attack scenario",
+                "Error response"
+            ],
+            "consequences": [
+                "Improper error handling",
+                "Injection vulnerability",
+                "Attack surface"
+            ]
+        },
+        "CNA_cwe": "74",
+        "cwe_guessed_from_descr": "755",
+        "cwe_guessed_from_terms": "74",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A sensitive information exposure vulnerability was found in foreman. Contents of tomcat's server.xml file, which contain passwords to candlepin's keystore and truststore, were found to be world readable.",
+        "Terms": {
+            "core_terms": [
+                "Information Exposure",
+                "Sensitive Data Exposure",
+                "Server Configuration"
+            ],
+            "contextual_terms": [
+                "Foreman",
+                "Tomcat",
+                "Server.xml file"
+            ],
+            "consequences": [
+                "Password Exposure",
+                "Keystore Compromise",
+                "Truststore Disclosure"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "200",
+        "cwe_guessed_from_terms": "522",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An improper input validation flaw was found in the eBPF subsystem in the Linux kernel. The issue occurs due to a lack of proper validation of dynamic pointers within user-supplied eBPF programs prior to executing them. This may allow an attacker with CAP_BPF privileges to escalate privileges and execute arbitrary code in the context of the kernel.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Flaw",
+                "eBPF Subsystem",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "Dynamic Pointers",
+                "CAP_BPF privileges",
+                "Arbitrary Code Execution"
+            ],
+            "consequences": [
+                "Kernel context execution",
+                "Privilege escalation",
+                "Arbitrary code execution"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "476",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An exposure of sensitive information to an unauthorized actor vulnerability [CWE-200] in\u00a0FortiClient for Windows 7.2.0, 7.0 all versions, 6.4 all versions, 6.2 all versions, Linux 7.2.0, 7.0 all versions, 6.4 all versions, 6.2 all versions and Mac 7.2.0 through 7.2.1, 7.0 all versions, 6.4 all versions, 6.2 all versions, may allow a local authenticated attacker with no Administrative privileges to retrieve the list of\u00a0files or folders excluded from malware scanning.",
+        "Terms": {
+            "core_terms": [
+                "Sensitive Information Exposure",
+                "Unauthorized Actor Vulnerability",
+                "File Exclusion"
+            ],
+            "contextual_terms": [
+                "FortiClient",
+                "Windows",
+                "Linux",
+                "Mac",
+                "Local authenticated attacker",
+                "Administrative privileges"
+            ],
+            "consequences": [
+                "List of excluded files retrieval",
+                "Malware scanning bypass",
+                "Information disclosure"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "200",
+        "cwe_guessed_from_terms": "532",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "\nAn Improper Input Validation vulnerability in the routing protocol daemon (rpd) of Juniper Networks allows an attacker to cause a Denial of Service (DoS )to the device upon receiving and processing a specific malformed ISO VPN BGP UPDATE packet.\n\nContinued receipt of this packet will cause a sustained Denial of Service condition.\n\nThis issue affects:\n\n\n\n  *  Juniper Networks Junos OS:\n  *  All versions prior to 20.4R3-S6;\n  *  21.1 versions prior to 21.1R3-S5;\n  *  21.2 versions prior to 21.2R3-S4;\n  *  21.3 versions prior to 21.3R3-S3;\n  *  21.4 versions prior to 21.4R3-S3;\n  *  22.1 versions prior to 22.1R2-S2, 22.1R3;\n  *  22.2 versions prior to 22.2R2-S1, 22.2R3;\n  *  22.3 versions prior to 22.3R1-S2, 22.3R2.\n\n\n\n\nJuniper Networks Junos OS Evolved:\n\n\n\n  *  All versions prior to 20.4R3-S6-EVO;\n  *  21.1-EVO version 21.1R1-EVO and later versions prior to 21.2R3-S4-EVO;\n  *  21.3-EVO versions prior to 21.3R3-S3-EVO;\n  *  21.4-EVO versions prior to 21.4R3-S3-EVO;\n  *  22.1-EVO versions prior to 22.1R3-EVO;\n  *  22.2-EVO versions prior to 22.2R2-S1-EVO, 22.2R3-EVO;\n  *  22.3-EVO versions prior to 22.3R1-S2-EVO, 22.3R2-EVO.\n\n\n\n\n\n\n",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Denial of Service",
+                "BGP UPDATE Packet"
+            ],
+            "contextual_terms": [
+                "Routing protocol daemon",
+                "Specific malformed ISO VPN",
+                "Sustained DoS condition"
+            ],
+            "consequences": [
+                "Device unavailability",
+                "Packet processing failure",
+                "Service disruption"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "755",
+        "cwe_guessed_from_terms": "120",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An Improper Input Validation vulnerability in Zscaler Client Connector on Linux allows Privilege Escalation. This issue affects Client Connector: before 1.4.0.105",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Privilege Escalation",
+                "Zscaler Client Connector"
+            ],
+            "contextual_terms": [
+                "Linux",
+                "Client Connector",
+                "Vulnerability"
+            ],
+            "consequences": [
+                "Privilege Escalation",
+                "Security weakness",
+                "Linux vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "269",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "\n\nEisBaer Scada - CWE-200: Exposure of Sensitive Information to an Unauthorized Actor\n\n",
+        "Terms": {
+            "core_terms": [
+                "Exposure of Sensitive Information",
+                "Unauthorized Actor",
+                "Information Disclosure"
+            ],
+            "contextual_terms": [
+                "Scada",
+                "EisBaer",
+                "Sensitive Information Exposure"
+            ],
+            "consequences": [
+                "Security breach",
+                "Unauthorized access",
+                "Confidential information disclosure"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "668",
+        "cwe_guessed_from_terms": "532",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "IBM QRadar SIEM 7.5 is vulnerable to information exposure allowing a delegated Admin tenant user with a specific domain security profile assigned to see data from other domains.  This vulnerability is due to an incomplete fix for CVE-2022-34352.  IBM X-Force ID:  266808.",
+        "Terms": {
+            "core_terms": [
+                "Information Exposure",
+                "Delegated Admin Vulnerability",
+                "Incomplete Fix"
+            ],
+            "contextual_terms": [
+                "Domain Security Profile",
+                "Tenant User",
+                "Data Access"
+            ],
+            "consequences": [
+                "Unauthorized Data Viewing",
+                "Security Profile Vulnerability",
+                "Incomplete Fix Vulnerability"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "668",
+        "cwe_guessed_from_terms": "732",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An improper input validation vulnerability has been found in Lanaccess ONSAFE MonitorHM affecting version 3.7.0. This vulnerability could lead a remote attacker to exploit the checkbox element and perform remote code execution, compromising the entire infrastructure.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "Remote Code Execution",
+                "Checkbox Exploitation"
+            ],
+            "contextual_terms": [
+                "Lanaccess ONSAFE MonitorHM",
+                "Version 3.7.0",
+                "Remote attacker"
+            ],
+            "consequences": [
+                "Infrastructure compromise",
+                "Remote exploitation",
+                "Security vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "94",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A CWE-200: Exposure of Sensitive Information to an Unauthorized Actor vulnerability exists in Telit Cinterion BGS5, Telit Cinterion EHS5/6/8, Telit Cinterion PDS5/6/8, Telit Cinterion ELS61/81, Telit Cinterion PLS62 that could allow an attacker with physical access to the target system to get access to a sensitive data on the targeted system.",
+        "Terms": {
+            "core_terms": [
+                "Sensitive Information Exposure",
+                "Physical Access Vulnerability",
+                "Unauthorized Actor Access"
+            ],
+            "contextual_terms": [
+                "Telit Cinterion BGS5",
+                "Telit Cinterion EHS5/6/8",
+                "Physical access",
+                "Sensitive data"
+            ],
+            "consequences": [
+                "Data compromise",
+                "Unauthorized access",
+                "System breach"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "668",
+        "cwe_guessed_from_terms": "668",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A CWE-200: Exposure of Sensitive Information to an Unauthorized Actor vulnerability exists in Telit Cinterion BGS5, Telit Cinterion EHS5/6/8, Telit Cinterion PDS5/6/8, Telit Cinterion ELS61/81, Telit Cinterion PLS62 that could allow a local, low privileged attacker to disclose hidden virtual paths and file names on the targeted system.",
+        "Terms": {
+            "core_terms": [
+                "Sensitive Information Exposure",
+                "Unauthorized Actor",
+                "Local Attack",
+                "File Disclosure"
+            ],
+            "contextual_terms": [
+                "Virtual paths",
+                "File names",
+                "Telit Cinterion devices"
+            ],
+            "consequences": [
+                "Information disclosure",
+                "System compromise",
+                "Privilege escalation"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "532",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A CWE-269: Improper Privilege Management vulnerability exists in Telit Cinterion BGS5, Telit Cinterion EHS5/6/8, Telit Cinterion PDS5/6/8, Telit Cinterion ELS61/81, Telit Cinterion PLS62 that could allow a local, low privileged attacker to elevate privileges to \"manufacturer\" level on the targeted system.",
+        "Terms": {
+            "core_terms": [
+                "Improper Privilege Management",
+                "Elevation of Privilege",
+                "Local Attack"
+            ],
+            "contextual_terms": [
+                "Telit Cinterion",
+                "Low privileged attacker",
+                "Manufacturer level"
+            ],
+            "consequences": [
+                "Privilege elevation",
+                "Local exploit",
+                "System compromise"
+            ]
+        },
+        "CNA_cwe": "269",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "269",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in some Intel(R) Server System M70KLP Family BIOS firmware before version 01.04.0029 may allow a privileged user to potentially enable escalation of privilege via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Privilege Escalation",
+                "BIOS Firmware"
+            ],
+            "contextual_terms": [
+                "Intel Server System M70KLP Family",
+                "Local Access"
+            ],
+            "consequences": [
+                "Escalation of Privilege",
+                "Local Exploitation",
+                "Firmware Vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in some Intel(R) Server board and Intel(R) Server System BIOS firmware may allow a privileged user to potentially enable escalation of privilege via local access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "BIOS Firmware",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "Intel Server Board",
+                "Local Access",
+                "Privileged User"
+            ],
+            "consequences": [
+                "Escalation of Privilege",
+                "Improper Validation",
+                "Local Security Risk"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "345",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in the BIOS firmware for some Intel(R) Processors may allow an authenticated user to potentially enable denial of service via adjacent access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "BIOS Firmware",
+                "Denial of Service"
+            ],
+            "contextual_terms": [
+                "Intel Processors",
+                "Authenticated User",
+                "Adjacent Access"
+            ],
+            "consequences": [
+                "Potential DoS",
+                "Firmware Vulnerability",
+                "Adjacent Attack"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "20",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in some OpenVINO Model Server software before version 2022.3 for Intel Distribution of OpenVINO toolkit may allow an unauthenticated user to potentially enable denial of service via network access.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "OpenVINO Model Server",
+                "Denial of Service"
+            ],
+            "contextual_terms": [
+                "OpenVINO",
+                "Intel Distribution",
+                "Network Access"
+            ],
+            "consequences": [
+                "Unauthenticated User",
+                "Potential DoS",
+                "Vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "190",
+        "cwe_guessed_from_terms": "476",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in firmware for Intel(R) QAT before version QAT20.L.1.0.40-00004 may allow escalation of privilege and denial of service via adjacent access.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation",
+                "Firmware Vulnerability",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "Intel QAT",
+                "Firmware",
+                "Denial of Service"
+            ],
+            "consequences": [
+                "Escalation of privilege",
+                "Adjacent access",
+                "Service denial"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "125",
+        "cwe_guessed_from_terms": "732",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": " Improper Input Validation in the Networking Stack of QNX SDP version(s) 6.6, 7.0, and 7.1 could allow an attacker to potentially cause Information Disclosure or a Denial-of-Service condition. \n\n",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Networking Stack Vulnerability",
+                "Information Disclosure",
+                "Denial-of-Service"
+            ],
+            "contextual_terms": [
+                "QNX SDP",
+                "Attacker",
+                "Networking Stack",
+                "Information Disclosure",
+                "Denial-of-Service"
+            ],
+            "consequences": [
+                "Potential information disclosure",
+                "Denial-of-Service condition",
+                "Security vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "125",
+        "cwe_guessed_from_terms": "787",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation in some Intel(R) Server Board BIOS firmware may allow a privileged user to potentially enable escalation of privilege via local access",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Privilege Escalation",
+                "BIOS Firmware"
+            ],
+            "contextual_terms": [
+                "Intel Server Board",
+                "Local Access",
+                "Validation"
+            ],
+            "consequences": [
+                "Escalation of Privilege",
+                "Local Vulnerability",
+                "Security Issue"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "AMI AptioV contains a vulnerability in BIOS where an Attacker may use an improper input validation via the local network. A successful exploit of this vulnerability may lead to a loss of confidentiality, integrity and availability.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "BIOS Vulnerability",
+                "Loss of Confidentiality"
+            ],
+            "contextual_terms": [
+                "Attacker",
+                "Local Network",
+                "Exploit"
+            ],
+            "consequences": [
+                "Loss of Integrity",
+                "Loss of Availability",
+                "Confidentiality Breach"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "345",
+        "cwe_guessed_from_terms": "345",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "AMI AptioV contains a vulnerability in BIOS where an Attacker may use an improper input validation via the local network. A successful exploit of this vulnerability may lead to a loss of confidentiality, integrity and availability.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "BIOS Vulnerability",
+                "Loss of Confidentiality"
+            ],
+            "contextual_terms": [
+                "Attacker",
+                "Local network",
+                "Exploit",
+                "Confidentiality",
+                "Integrity",
+                "Availability"
+            ],
+            "consequences": [
+                "Improper input validation",
+                "Loss of confidentiality",
+                "Loss of integrity",
+                "Loss of availability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "345",
+        "cwe_guessed_from_terms": "345",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "AMI AptioV contains a vulnerability in BIOS where an Attacker may use an improper input validation via the local network. A successful exploit of this vulnerability may lead to a loss of confidentiality, integrity and availability.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "BIOS Vulnerability",
+                "Loss of Confidentiality"
+            ],
+            "contextual_terms": [
+                "Attacker",
+                "Local network",
+                "Exploit"
+            ],
+            "consequences": [
+                "Confidentiality loss",
+                "Integrity loss",
+                "Availability loss"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "345",
+        "cwe_guessed_from_terms": "345",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "@adobe/css-tools version 4.3.0 and earlier are affected by an Improper Input Validation vulnerability that could result in a minor denial of service while attempting to parse CSS. Exploitation of this issue does not require user interaction or privileges.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Denial of Service",
+                "CSS Parsing"
+            ],
+            "contextual_terms": [
+                "Vulnerability",
+                "Exploitation",
+                "User interaction"
+            ],
+            "consequences": [
+                "Minor impact",
+                "No user interaction required",
+                "No privilege escalation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "476",
+        "cwe_guessed_from_terms": "400",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An improper input validation vulnerability in the Schweitzer Engineering Laboratories SEL-411L could allow a malicious actor to manipulate authorized users to click on a link that could allow undesired behavior.\n\n\n\nSee product Instruction Manual Appendix A dated 20230830 for more details.\n\n",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "Manipulation of Authorized Users",
+                "Undesired Behavior"
+            ],
+            "contextual_terms": [
+                "Schweitzer Engineering Laboratories",
+                "SEL-411L",
+                "Product Instruction Manual"
+            ],
+            "consequences": [
+                "Malicious link manipulation",
+                "Unauthorized behavior execution",
+                "Security bypass"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "601",
+        "cwe_guessed_from_terms": "287",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "\n\n\nIBM InfoSphere Information Server 11.7 could allow a remote attacker to cause a denial of service due to improper input validation.  IBM X-Force ID:  265161.\n\n\n\n",
+        "Terms": {
+            "core_terms": [
+                "Denial of Service",
+                "Improper Input Validation",
+                "Remote Attack"
+            ],
+            "contextual_terms": [
+                "Improper input",
+                "Attack",
+                "Remote"
+            ],
+            "consequences": [
+                "Service denial",
+                "Validation vulnerability",
+                "Remote exploitation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "20",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper Input Validation in the processing of user-supplied splash screen during system boot in Phoenix SecureCore\u2122 Technology\u2122 4 potentially allows denial-of-service attacks or arbitrary code execution.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Denial-of-Service",
+                "Arbitrary Code Execution"
+            ],
+            "contextual_terms": [
+                "User-supplied",
+                "System boot",
+                "Phoenix SecureCore Technology 4"
+            ],
+            "consequences": [
+                "Splash screen processing vulnerability",
+                "System instability",
+                "Security compromise"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "20",
+        "cwe_guessed_from_terms": "400",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A vulnerability has been identified in Opcenter Quality (All versions < V2312), SIMATIC PCS neo (All versions < V4.1), SINEC NMS (All versions < V2.0 SP1), Totally Integrated Automation Portal (TIA Portal) V14 (All versions), Totally Integrated Automation Portal (TIA Portal) V15.1 (All versions), Totally Integrated Automation Portal (TIA Portal) V16 (All versions), Totally Integrated Automation Portal (TIA Portal) V17 (All versions), Totally Integrated Automation Portal (TIA Portal) V18 (All versions < V18 Update 3). The affected application contains an improper input validation vulnerability that could allow an attacker to bring the service into a Denial-of-Service state by sending a specifically crafted message to 4004/tcp. The corresponding service is auto-restarted after the crash is detected by a watchdog.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Denial-of-Service",
+                "Service Restart"
+            ],
+            "contextual_terms": [
+                "4004/tcp",
+                "Crafted message",
+                "Watchdog detection"
+            ],
+            "consequences": [
+                "Service crash",
+                "Attack impact",
+                "Automated restart"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "476",
+        "cwe_guessed_from_terms": "400",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper input validation vulnerability in Newsletter Software SuperMailer affecting version 11.20.0.2204. An attacker could exploit this vulnerability by sending a malicious configuration file (file with SMB extension) to a user via a link or email attachment and persuade the user to open the file with the affected software on the local system. A successful exploit could allow the attacker to crash the application when attempting to load the malicious file.",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "Configuration File Handling",
+                "Application Crash"
+            ],
+            "contextual_terms": [
+                "Malicious file",
+                "SMB extension",
+                "Local system"
+            ],
+            "consequences": [
+                "Crash of application",
+                "File handling vulnerability",
+                "Local system exploitation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "843",
+        "cwe_guessed_from_terms": "20",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Adobe After Effects versions 24.0.3 (and earlier) and 23.6.0 (and earlier) are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Arbitrary Code Execution",
+                "User Interaction"
+            ],
+            "contextual_terms": [
+                "Adobe After Effects",
+                "Vulnerability",
+                "User interaction"
+            ],
+            "consequences": [
+                "Arbitrary code execution",
+                "Malicious file",
+                "Security risk"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "416",
+        "cwe_guessed_from_terms": "94",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A vulnerability classified as critical has been found in Byzoro S210 up to 20231210. Affected is an unknown function of the file /importexport.php. The manipulation of the argument sql leads to injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-248688.",
+        "Terms": {
+            "core_terms": [
+                "Injection Vulnerability",
+                "Critical Vulnerability",
+                "Remote Attack"
+            ],
+            "contextual_terms": [
+                "Byzoro S210",
+                "importexport.php",
+                "SQL manipulation"
+            ],
+            "consequences": [
+                "Remote exploitation",
+                "Public disclosure",
+                "Critical severity"
+            ]
+        },
+        "CNA_cwe": "74",
+        "cwe_guessed_from_descr": "89",
+        "cwe_guessed_from_terms": "94",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "\nDell BIOS contains an Improper Input Validation vulnerability. A local malicious user with high privileges could potentially exploit this vulnerability in order to corrupt memory on the system.\n\n",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Memory Corruption",
+                "Privilege Escalation"
+            ],
+            "contextual_terms": [
+                "Local user",
+                "High privileges",
+                "Corrupt memory"
+            ],
+            "consequences": [
+                "Vulnerability exploit",
+                "System memory corruption",
+                "Privilege elevation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "190",
+        "cwe_guessed_from_terms": "787",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Cross-Site Request Forgery (CSRF) vulnerability in Designful Stylish Price List \u2013 Price Table Builder & QR Code Restaurant Menu.This issue affects Stylish Price List \u2013 Price Table Builder & QR Code Restaurant Menu: from n/a through 7.0.17.\n\n",
+        "Terms": {
+            "core_terms": [
+                "Cross-Site Request Forgery",
+                "CSRF Vulnerability",
+                "Stylish Price List"
+            ],
+            "contextual_terms": [
+                "Designful",
+                "Price Table Builder",
+                "QR Code Restaurant Menu"
+            ],
+            "consequences": [
+                "Unauthorized actions",
+                "Data manipulation",
+                "Application security"
+            ]
+        },
+        "CNA_cwe": "352",
+        "cwe_guessed_from_descr": "352",
+        "cwe_guessed_from_terms": "352",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Acrobat Reader T5 (MSFT Edge) versions 120.0.2210.91 and earlier are affected by an Improper Input Validation vulnerability. An unauthenticated attacker could leverage this vulnerability to achieve an application denial-of-service in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Denial-of-Service",
+                "User Interaction"
+            ],
+            "contextual_terms": [
+                "Acrobat Reader T5",
+                "MSFT Edge",
+                "Vulnerability"
+            ],
+            "consequences": [
+                "Application crash",
+                "User context impact",
+                "Malicious file exploitation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "125",
+        "cwe_guessed_from_terms": "476",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Acrobat Reader T5 (MSFT Edge) versions 120.0.2210.91 and earlier are affected by an Improper Input Validation vulnerability. An unauthenticated attacker could leverage this vulnerability to achieve an application denial-of-service in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation Vulnerability",
+                "Application Denial-of-Service",
+                "User Interaction"
+            ],
+            "contextual_terms": [
+                "Acrobat Reader T5",
+                "MSFT Edge",
+                "Vulnerability exploitation"
+            ],
+            "consequences": [
+                "Application crash",
+                "Unauthenticated attacker",
+                "Malicious file"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "125",
+        "cwe_guessed_from_terms": "125",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "A vulnerability in the web-based management interface of Cisco ThousandEyes Enterprise Agent, Virtual Appliance installation type, could allow an authenticated, remote attacker to perform a command injection and elevate privileges to root. This vulnerability is due to insufficient validation of user-supplied input for the web interface. An attacker could exploit this vulnerability by sending a crafted HTTP packet to the affected device. A successful exploit could allow the attacker to execute arbitrary commands and elevate privileges to root.",
+        "Terms": {
+            "core_terms": [
+                "Command Injection",
+                "Privilege Escalation",
+                "Insufficient Input Validation"
+            ],
+            "contextual_terms": [
+                "Web-based management interface",
+                "User-supplied input",
+                "Crafted HTTP packet"
+            ],
+            "consequences": [
+                "Arbitrary command execution",
+                "Elevation of privileges",
+                "Security vulnerability"
+            ]
+        },
+        "CNA_cwe": "78",
+        "cwe_guessed_from_descr": "77",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper Input Validation vulnerability in OpenText AppBuilder on Windows, Linux allows OS Command Injection.\n\nThe AppBuilder's Scheduler functionality that facilitates creation of scheduled tasks is vulnerable to command injection. This allows authenticated users to inject arbitrary operating system commands into the executing process.\n\n\nThis issue affects AppBuilder: from 21.2 before 23.2.\n\n",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "Command Injection",
+                "Scheduler Functionality"
+            ],
+            "contextual_terms": [
+                "AppBuilder",
+                "Authenticated Users",
+                "Operating System Commands"
+            ],
+            "consequences": [
+                "Arbitrary command execution",
+                "Privilege escalation",
+                "Scheduler vulnerability"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "78",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper Input Validation vulnerability in OpenText AppBuilder on Windows, Linux allows Probe System Files.\n\nAn authenticated AppBuilder user with the ability to create or manage existing databases can leverage them to exploit the AppBuilder server - including access to its local file system.\n\n\nThis issue affects AppBuilder: from 21.2 before 23.2.\n\n",
+        "Terms": {
+            "core_terms": [
+                "Input Validation Vulnerability",
+                "AppBuilder Server Exploitation",
+                "Authenticated User Privilege"
+            ],
+            "contextual_terms": [
+                "Probe System Files",
+                "Database Management",
+                "Local File System Access"
+            ],
+            "consequences": [
+                "Unauthorized Access",
+                "File System Exploitation",
+                "Privilege Escalation"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "434",
+        "cwe_guessed_from_terms": "862",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Improper Input Validation vulnerability in OpenText AppBuilder on Windows, Linux allows Probe System Files.\n\n\nAppBuilder configuration files are viewable by unauthenticated users.\n\n\nThis issue affects AppBuilder: from 21.2 before 23.2.\n\n",
+        "Terms": {
+            "core_terms": [
+                "Improper Input Validation",
+                "Unauthenticated Access",
+                "Probe System Files"
+            ],
+            "contextual_terms": [
+                "Configuration files",
+                "AppBuilder",
+                "Windows",
+                "Linux"
+            ],
+            "consequences": [
+                "Information disclosure",
+                "System compromise",
+                "Unauthenticated access"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "59",
+        "cwe_guessed_from_terms": "22",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "\n\n\n\n\n\n\n\n\n\n\nMachineSense FeverWarn Raspberry Pi-based devices lack input sanitization, which could allow an attacker on an adjacent network to send a message running commands or could overflow the stack.\n\n\n\n\n\n\n\n\n\n\n\n",
+        "Terms": {
+            "core_terms": [
+                "Input Sanitization",
+                "Command Injection",
+                "Stack Overflow"
+            ],
+            "contextual_terms": [
+                "Adjacent Network",
+                "Raspberry Pi-based Devices",
+                "Message"
+            ],
+            "consequences": [
+                "Remote Code Execution",
+                "Security Vulnerability",
+                "System Compromise"
+            ]
+        },
+        "CNA_cwe": "20",
+        "cwe_guessed_from_descr": "862",
+        "cwe_guessed_from_terms": "77",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "Microsoft Dynamics 365 Customer Engagement Cross-Site Scripting Vulnerability",
+        "Terms": {
+            "core_terms": [
+                "Cross-Site Scripting",
+                "Web Application Vulnerability",
+                "Microsoft Dynamics 365"
+            ],
+            "contextual_terms": [
+                "Customer Engagement",
+                "Client-side Code Injection",
+                "Security Risk"
+            ],
+            "consequences": [
+                "Data theft",
+                "Session hijacking",
+                "Malicious script execution"
+            ]
+        },
+        "CNA_cwe": "79",
+        "cwe_guessed_from_descr": "79",
+        "cwe_guessed_from_terms": "79",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An exposure of sensitive information to an unauthorized actor vulnerability [CWE-200] in Fortinet FortiManager version 7.4.0 through 7.4.1 and before 7.2.5, FortiAnalyzer version 7.4.0 through 7.4.1 and before 7.2.5 and FortiAnalyzer-BigData before 7.2.5 allows an adom administrator to enumerate other adoms and device names via crafted HTTP or HTTPS requests.",
+        "Terms": {
+            "core_terms": [
+                "Sensitive Information Exposure",
+                "Unauthorized Access",
+                "Enumeration"
+            ],
+            "contextual_terms": [
+                "Fortinet FortiManager",
+                "FortiAnalyzer",
+                "FortiAnalyzer-BigData",
+                "HTTP",
+                "HTTPS",
+                "Crafted Requests"
+            ],
+            "consequences": [
+                "Adom Enumeration",
+                "Unauthorized Access",
+                "Sensitive Information Leakage"
+            ]
+        },
+        "CNA_cwe": "200",
+        "cwe_guessed_from_descr": "668",
+        "cwe_guessed_from_terms": "668",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    },
+    {
+        "Description": "An improper privilege management vulnerability [CWE-269] in Fortinet FortiClientEMS version 7.2.0 through 7.2.2 and before 7.0.10 allows an\u00a0Site administrator with Super Admin privileges to perform global administrative operations affecting other sites via crafted HTTP or HTTPS requests.",
+        "Terms": {
+            "core_terms": [
+                "Improper Privilege Management",
+                "Global Administrative Operations",
+                "Crafted Requests"
+            ],
+            "contextual_terms": [
+                "Site administrator",
+                "Super Admin privileges",
+                "HTTP",
+                "HTTPS"
+            ],
+            "consequences": [
+                "Unauthorized access",
+                "Administrative control",
+                "Security bypass"
+            ]
+        },
+        "CNA_cwe": "269",
+        "cwe_guessed_from_descr": "269",
+        "cwe_guessed_from_terms": "269",
+        "Stefano_CWE": "",
+        "Peter_CWE": "",
+        "Thijs_CWE": "",
+        "Ronan_CWE": ""
+    }
+]
