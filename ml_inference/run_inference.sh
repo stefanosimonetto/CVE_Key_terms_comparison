@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 
+python main_comparison/gpt_api_calls/inference.py
 python main_comparison/cve_core/inference.py
 python main_comparison/cve_all_terms/inference.py
 python main_comparison/cve_core_consequences/inference.py
@@ -17,5 +18,5 @@ python bert_phi_comparison/phi/inference.py
 python manual_terms_review/keybert_yake.py
 python manual_terms_review/llama_gpt.py
 
-python sota/comparison.py
+python sota/inference.py
 python no-info_other/comparison.py
