@@ -19,14 +19,28 @@ docker run test_inference
 
 ```
 ## What to expect by running the artifact
-To test the artifact, follow these steps (note that creating the Docker container will take time because the dataset is large):
+When running the artifact, the following steps will be performed:
 
+1-The Docker container will set up the necessary environment.
+
+2-The dataset will be loaded (this process will take few minutes)
+
+3-Each model will be run in inference mode, one at a time, generating and printing the classification reports corresponding to all the tables presented in the paper.
 
 ## dataset availability
 The complete dataset is available and can be accessed at: https://drive.google.com/drive/folders/13i4sKSNiHIWU0mQ_MVe1lansIHt-1xKJ?usp=drive_link
 Note: Downloading the dataset requires requesting access, which may de-anonymize the reviewers.
 
 # NOTE: 
-If you want to train the models with the same dataset, the results may slightly differ due to the randomness in the initialization of the neural network.
+### Expert Evaluation Criteria:
 
+1. **Hallucinations**: Does the model introduce terms that are neither present in the CVE description nor logically connected to the vulnerability?
+   
+2. **Consistency**: Are the key terms generated consistent across three different runs of the model?
+
+3. **Overall Completeness**: Do the extracted terms, including core elements, consequences, and contextual information, comprehensively describe the vulnerability?
+
+
+
+If you want to train the models with the same dataset, the results may slightly differ due to the randomness in the initialization of the neural network.
 
