@@ -1,0 +1,13 @@
+# Ensure Unix-style line endings for scripts (to prevent problems in Unix environments)
+*.sh text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Keep Windows line endings for batch files or Windows-specific scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# For markdown and text files, use Unix-style line endings
+*.md text eol=lf
+*.txt text eol=lf
