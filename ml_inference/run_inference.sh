@@ -14,3 +14,8 @@ python main_comparison/cve_description/inference_class.py
 python bert_phi_comparison/bert/inference.py
 python bert_phi_comparison/phi/inference.py
 
+python manual_terms_review/keybert_yake.py
+python manual_terms_review/llama_gpt.py
+
+python sota/comparison.py
+python no-info_other/comparison.py
